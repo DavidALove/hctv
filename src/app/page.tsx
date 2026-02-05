@@ -1,5 +1,6 @@
 import React from 'react';
 import { Play, Tv, Calendar, Radio } from 'lucide-react';
+import Link from 'next/link';
 
 export default function HillCountryTV() {
   return (
@@ -14,10 +15,12 @@ export default function HillCountryTV() {
           <div className="hidden md:flex items-center gap-8">
             <a href="#live" className="hover:text-emerald-400 transition-colors">Live Now</a>
             <a href="#schedule" className="hover:text-emerald-400 transition-colors">Schedule</a>
-            <a href="#about" className="hover:text-emerald-400 transition-colors">About</a>
-            <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-              Watch Now
-            </button>
+            <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
+            <a href="#live">
+              <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
+                Watch Now
+              </button>
+            </a>
           </div>
         </div>
       </nav>
@@ -170,7 +173,7 @@ export default function HillCountryTV() {
             <div>
               <h4 className="font-bold mb-4">About</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-emerald-400 transition-colors">Our Story</a></li>
+                <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
                 <li><a href="#" className="hover:text-emerald-400 transition-colors">Contact</a></li>
                 <li><a href="#" className="hover:text-emerald-400 transition-colors">Advertise</a></li>
               </ul>
