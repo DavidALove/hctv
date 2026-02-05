@@ -16,6 +16,7 @@ export default function HillCountryTV() {
             <a href="#live" className="hover:text-emerald-400 transition-colors">Live Now</a>
             <a href="#schedule" className="hover:text-emerald-400 transition-colors">Schedule</a>
             <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
+            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
             <a href="#live">
               <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
                 Watch Now
@@ -174,7 +175,7 @@ export default function HillCountryTV() {
               <h4 className="font-bold mb-4">About</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
-                <li><a href="#" className="hover:text-emerald-400 transition-colors">Contact</a></li>
+                <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
                 <li><a href="#" className="hover:text-emerald-400 transition-colors">Advertise</a></li>
               </ul>
             </div>
