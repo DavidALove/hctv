@@ -30,7 +30,7 @@ export default function HillCountryTV() {
             {/* Left Side - Hero Text */}
             <div className="space-y-6 lg:pr-8">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                Your Texas Hill Country
+                HCTV
                 <span className="block text-emerald-400">Streaming Now</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300">
