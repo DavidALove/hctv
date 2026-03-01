@@ -1,6 +1,7 @@
 import React from 'react';
 import { Play, Tv, Calendar, Radio } from 'lucide-react';
 import Link from 'next/link';
+import { ComingSoonButton } from '@/components/ComingSoonButton';
 
 export default function HillCountryTV() {
   return (
@@ -14,15 +15,13 @@ export default function HillCountryTV() {
           </div>
           <div className="hidden md:flex items-center gap-8">
             <a href="#live" className="hover:text-emerald-400 transition-colors">Live Now</a>
-            <a href="#schedule" className="hover:text-emerald-400 transition-colors">Schedule</a>
+            <Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
             <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
             <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
             <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
-            <a href="#live">
-              <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-                Watch Now
-              </button>
-            </a>
+            <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
+              Watch Now
+            </ComingSoonButton>
           </div>
         </div>
       </nav>
@@ -42,13 +41,13 @@ export default function HillCountryTV() {
                 Local stories, events, and culture from the heart of Texas Hill Country — live and on-demand
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <button className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center gap-2">
+                <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center gap-2">
                   <Play className="w-5 h-5" />
                   Watch Live
-                </button>
-                <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-white/20">
+                </ComingSoonButton>
+                <ComingSoonButton className="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-white/20">
                   View Schedule
-                </button>
+                </ComingSoonButton>
               </div>
             </div>
 
@@ -145,9 +144,9 @@ export default function HillCountryTV() {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Free to watch. Available on Apple TV, Roku, iPhone, and web.
           </p>
-          <button className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
+          <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
             Get Started
-          </button>
+          </ComingSoonButton>
         </div>
       </section>
 
@@ -166,7 +165,7 @@ export default function HillCountryTV() {
               <h4 className="font-bold mb-4">Watch</h4>
               <ul className="space-y-2 text-gray-400">
                 <li><a href="#" className="hover:text-emerald-400 transition-colors">Live Stream</a></li>
-                <li><a href="#" className="hover:text-emerald-400 transition-colors">Schedule</a></li>
+                <li><Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link></li>
                 <li><a href="#" className="hover:text-emerald-400 transition-colors">On Demand</a></li>
               </ul>
             </div>

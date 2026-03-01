@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import { Tv, ArrowLeft, Mail, Phone, MapPin, Send } from 'lucide-react';
 import Link from 'next/link';
+import { ComingSoonButton } from '@/components/ComingSoonButton';
 
 export default function ContactPage() {
     const [formData, setFormData] = useState({
@@ -61,15 +62,13 @@ export default function ContactPage() {
                     </Link>
                     <div className="hidden md:flex items-center gap-8">
                         <Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Now</Link>
-                        <Link href="/#schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
+                        <Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
                         <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
                         <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
                         <Link href="/contact" className="text-emerald-400">Contact</Link>
-                        <Link href="/#live">
-                            <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-                                Watch Now
-                            </button>
-                        </Link>
+                        <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
+                            Watch Now
+                        </ComingSoonButton>
                     </div>
                 </div>
             </nav>
@@ -288,11 +287,9 @@ export default function ContactPage() {
                     <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                         Free to watch. Available on Apple TV, Roku, iPhone, and web.
                     </p>
-                    <Link href="/#live">
-                        <button className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
-                            Watch Live Now
-                        </button>
-                    </Link>
+                    <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
+                        Watch Live Now
+                    </ComingSoonButton>
                 </div>
             </section>
 
@@ -311,7 +308,7 @@ export default function ContactPage() {
                             <h4 className="font-bold mb-4">Watch</h4>
                             <ul className="space-y-2 text-gray-400">
                                 <li><Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Stream</Link></li>
-                                <li><Link href="/#schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link></li>
+                                <li><Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link></li>
                                 <li><Link href="/#" className="hover:text-emerald-400 transition-colors">On Demand</Link></li>
                             </ul>
                         </div>
