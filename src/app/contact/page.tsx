@@ -197,8 +197,8 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-lg mb-2">Email</h3>
-                                            <a href="mailto:info@hillcountrytv.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                                                info@hillcountrytv.com
+                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                                info@hillcountrymediagroup.com
                                             </a>
                                             <p className="text-gray-400 text-sm mt-1">For general inquiries</p>
                                         </div>
@@ -212,8 +212,8 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-lg mb-2">Advertising</h3>
-                                            <a href="mailto:advertising@hillcountrytv.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                                                advertising@hillcountrytv.com
+                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                                info@hillcountrymediagroup.com
                                             </a>
                                             <p className="text-gray-400 text-sm mt-1">For advertising opportunities</p>
                                         </div>
@@ -227,8 +227,8 @@ export default function ContactPage() {
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-lg mb-2">News Tips</h3>
-                                            <a href="mailto:news@hillcountrytv.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                                                news@hillcountrytv.com
+                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                                info@hillcountrymediagroup.com
                                             </a>
                                             <p className="text-gray-400 text-sm mt-1">Share your story ideas</p>
                                         </div>

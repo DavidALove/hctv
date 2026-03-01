@@ -203,7 +203,7 @@ export default function GetInvolvedPage() {
                 Submit an Application / Pitch
               </button>
             </a>
-            <a href="mailto:info@hillcountrytv.com">
+            <a href="mailto:info@hillcountrymediagroup.com">
               <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-white/20">
                 Email Us
               </button>
@@ -402,8 +402,8 @@ export default function GetInvolvedPage() {
               <Mail className="w-5 h-5 text-emerald-400" />
               <div>
                 <p className="text-sm text-gray-400">General</p>
-                <a href="mailto:info@hillcountrytv.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                  info@hillcountrytv.com
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                  info@hillcountrymediagroup.com
                 </a>
               </div>
             </div>
@@ -411,8 +411,8 @@ export default function GetInvolvedPage() {
               <Mail className="w-5 h-5 text-emerald-400" />
               <div>
                 <p className="text-sm text-gray-400">Advertising</p>
-                <a href="mailto:advertising@hillcountrytv.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                  advertising@hillcountrytv.com
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                  info@hillcountrymediagroup.com
                 </a>
               </div>
             </div>
@@ -420,8 +420,8 @@ export default function GetInvolvedPage() {
               <Mail className="w-5 h-5 text-emerald-400" />
               <div>
                 <p className="text-sm text-gray-400">News tips</p>
-                <a href="mailto:news@hillcountrytv.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
-                  news@hillcountrytv.com
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                  info@hillcountrymediagroup.com
                 </a>
               </div>
             </div>

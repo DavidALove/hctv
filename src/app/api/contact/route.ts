@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
 import { supabase } from '@/lib/supabase';
 
 export async function POST(request: Request) {
@@ -13,26 +15,45 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!supabase) {
-      return NextResponse.json(
-        { error: 'Database not configured' },
-        { status: 503 }
-      );
-    }
+    if (supabase) {
+      const { error } = await supabase.from('contact_submissions').insert({
+        name,
+        email,
+        subject,
+        message,
+      });
 
-    const { error } = await supabase.from('contact_submissions').insert({
-      name,
-      email,
-      subject,
-      message,
-    });
+      if (error) {
+        console.error('Supabase error:', error);
+        return NextResponse.json(
+          { error: 'Failed to save message' },
+          { status: 500 }
+        );
+      }
+    } else {
+      // Fallback to file storage when Supabase is not configured
+      const messagesFile = path.join(process.cwd(), 'messages.json');
+      const newMessage = {
+        id: Date.now().toString(),
+        timestamp: new Date().toISOString(),
+        name,
+        email,
+        subject,
+        message,
+      };
 
-    if (error) {
-      console.error('Supabase error:', error);
-      return NextResponse.json(
-        { error: 'Failed to save message' },
-        { status: 500 }
-      );
+      let messages: object[] = [];
+      if (fs.existsSync(messagesFile)) {
+        try {
+          const fileContent = fs.readFileSync(messagesFile, 'utf-8');
+          messages = JSON.parse(fileContent);
+          if (!Array.isArray(messages)) messages = [];
+        } catch {
+          messages = [];
+        }
+      }
+      messages.push(newMessage);
+      fs.writeFileSync(messagesFile, JSON.stringify(messages, null, 2));
     }
 
     return NextResponse.json(

@@ -1,4 +1,6 @@
 import { NextResponse } from 'next/server';
+import fs from 'fs';
+import path from 'path';
 import { supabase } from '@/lib/supabase';
 
 const CATEGORIES = [
@@ -32,29 +34,51 @@ export async function POST(request: Request) {
       );
     }
 
-    if (!supabase) {
-      return NextResponse.json(
-        { error: 'Database not configured' },
-        { status: 503 }
-      );
-    }
+    if (supabase) {
+      const { error } = await supabase.from('get_involved_submissions').insert({
+        name,
+        email,
+        phone: phone || null,
+        category,
+        location: location || null,
+        links: links || null,
+        message,
+      });
 
-    const { error } = await supabase.from('get_involved_submissions').insert({
-      name,
-      email,
-      phone: phone || null,
-      category,
-      location: location || null,
-      links: links || null,
-      message,
-    });
+      if (error) {
+        console.error('Supabase error:', error);
+        return NextResponse.json(
+          { error: 'Failed to save submission' },
+          { status: 500 }
+        );
+      }
+    } else {
+      // Fallback to file storage when Supabase is not configured
+      const submissionsFile = path.join(process.cwd(), 'get-involved-submissions.json');
+      const newSubmission = {
+        id: Date.now().toString(),
+        timestamp: new Date().toISOString(),
+        name,
+        email,
+        phone: phone || '',
+        category,
+        location: location || '',
+        links: links || '',
+        message,
+      };
 
-    if (error) {
-      console.error('Supabase error:', error);
-      return NextResponse.json(
-        { error: 'Failed to save submission' },
-        { status: 500 }
-      );
+      let submissions: object[] = [];
+      if (fs.existsSync(submissionsFile)) {
+        try {
+          const fileContent = fs.readFileSync(submissionsFile, 'utf-8');
+          submissions = JSON.parse(fileContent);
+          if (!Array.isArray(submissions)) submissions = [];
+        } catch {
+          submissions = [];
+        }
+      }
+      submissions.push(newSubmission);
+      fs.writeFileSync(submissionsFile, JSON.stringify(submissions, null, 2));
     }
 
     return NextResponse.json(
