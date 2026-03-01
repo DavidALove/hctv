@@ -1,6 +1,5 @@
 import { NextResponse } from 'next/server';
-import fs from 'fs';
-import path from 'path';
+import { supabase } from '@/lib/supabase';
 
 const CATEGORIES = [
   'Investor / Strategic Partner',
@@ -33,34 +32,30 @@ export async function POST(request: Request) {
       );
     }
 
-    const submissionsFile = path.join(process.cwd(), 'get-involved-submissions.json');
-
-    const newSubmission = {
-      id: Date.now().toString(),
-      timestamp: new Date().toISOString(),
-      name,
-      email,
-      phone: phone || '',
-      category,
-      location: location || '',
-      links: links || '',
-      message,
-    };
-
-    let submissions: object[] = [];
-
-    if (fs.existsSync(submissionsFile)) {
-      const fileContent = fs.readFileSync(submissionsFile, 'utf-8');
-      try {
-        submissions = JSON.parse(fileContent);
-        if (!Array.isArray(submissions)) submissions = [];
-      } catch {
-        submissions = [];
-      }
+    if (!supabase) {
+      return NextResponse.json(
+        { error: 'Database not configured' },
+        { status: 503 }
+      );
     }
 
-    submissions.push(newSubmission);
-    fs.writeFileSync(submissionsFile, JSON.stringify(submissions, null, 2));
+    const { error } = await supabase.from('get_involved_submissions').insert({
+      name,
+      email,
+      phone: phone || null,
+      category,
+      location: location || null,
+      links: links || null,
+      message,
+    });
+
+    if (error) {
+      console.error('Supabase error:', error);
+      return NextResponse.json(
+        { error: 'Failed to save submission' },
+        { status: 500 }
+      );
+    }
 
     return NextResponse.json(
       { success: true, message: 'Submission received successfully' },
