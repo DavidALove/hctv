@@ -60,17 +60,10 @@ export default function HillCountryTV() {
               </div>
 
               {/* Video Player Container */}
-              <div className="relative aspect-video bg-gradient-to-br from-slate-900 via-slate-800 to-emerald-900 rounded-2xl overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10">
-                {/* Placeholder for live stream - you'll integrate your HLS player here */}
-                <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="text-center space-y-4">
-                    <div className="w-24 h-24 mx-auto bg-emerald-600/20 rounded-full flex items-center justify-center backdrop-blur-sm border border-emerald-500/30">
-                      <Play className="w-12 h-12 text-emerald-400" />
-                    </div>
-                    <p className="text-emerald-400 font-medium">HLS Stream Will Load Here</p>
-                  </div>
-                </div>
-              </div>
+              <div
+                className="relative aspect-video rounded-2xl overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10 bg-cover bg-center"
+                style={{ backgroundImage: "url(/hero-video-thumbnail.png)" }}
+              />
             </div>
 
           </div>
@@ -111,23 +104,28 @@ export default function HillCountryTV() {
               {
                 title: "Local News & Events",
                 description: "Stay connected with what's happening in Boerne, Kerrville, Fredericksburg, and beyond",
-                image: "from-blue-900 to-blue-700"
+                image: "from-blue-900 to-blue-700",
+                thumbnail: "/hctv-news-thumbnail.png"
               },
               {
                 title: "Hill Country Stories",
                 description: "Profiles of local businesses, artisans, and the people who make this region special",
-                image: "from-amber-900 to-amber-700"
+                image: "from-amber-900 to-amber-700",
+                thumbnail: "/hill-country-stories-thumbnail.png"
               },
               {
                 title: "Outdoor & Recreation",
                 description: "Explore the natural beauty, trails, rivers, and adventures of the Hill Country",
-                image: "from-green-900 to-green-700"
+                image: "from-green-900 to-green-700",
+                thumbnail: "/outdoor-recreation-thumbnail.png"
               }
             ].map((show, idx) => (
               <div key={idx} className="group cursor-pointer">
-                <div className={`aspect-video bg-gradient-to-br ${show.image} rounded-xl mb-4 flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105`}>
+                <div
+                  className={`aspect-video rounded-xl mb-4 flex items-center justify-center relative overflow-hidden transition-transform group-hover:scale-105 ${!show.thumbnail ? `bg-gradient-to-br ${show.image}` : ""}`}
+                  style={show.thumbnail ? { backgroundImage: `url(${show.thumbnail})`, backgroundSize: "cover", backgroundPosition: "center" } : undefined}
+                >
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
-                  <Play className="w-16 h-16 text-white/80 group-hover:text-white transition-colors relative z-10" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{show.title}</h3>
                 <p className="text-gray-400">{show.description}</p>
