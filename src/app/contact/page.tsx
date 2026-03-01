@@ -12,12 +12,35 @@ export default function ContactPage() {
         message: ''
     });
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const [isSubmitting, setIsSubmitting] = useState(false);
+
+    const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
-        // Handle form submission here
-        console.log('Form submitted:', formData);
-        alert('Thank you for your message! We will get back to you soon.');
-        setFormData({ name: '', email: '', subject: '', message: '' });
+        setIsSubmitting(true);
+
+        try {
+            const response = await fetch('/api/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(formData),
+            });
+
+            const data = await response.json();
+
+            if (response.ok) {
+                alert('Thank you for your message! We will get back to you soon.');
+                setFormData({ name: '', email: '', subject: '', message: '' });
+            } else {
+                alert(data.error || 'Something went wrong. Please try again.');
+            }
+        } catch (error) {
+            console.error('Error submitting form:', error);
+            alert('Failed to send message. Please try again later.');
+        } finally {
+            setIsSubmitting(false);
+        }
     };
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -40,6 +63,7 @@ export default function ContactPage() {
                         <Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Now</Link>
                         <Link href="/#schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
                         <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
+                        <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
                         <Link href="/contact" className="text-emerald-400">Contact</Link>
                         <Link href="/#live">
                             <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
@@ -147,10 +171,11 @@ export default function ContactPage() {
 
                                 <button
                                     type="submit"
-                                    className="w-full bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2"
+                                    disabled={isSubmitting}
+                                    className={`w-full bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                 >
                                     <Send className="w-5 h-5" />
-                                    Send Message
+                                    {isSubmitting ? 'Sending...' : 'Send Message'}
                                 </button>
                             </form>
                         </div>
@@ -294,6 +319,7 @@ export default function ContactPage() {
                             <h4 className="font-bold mb-4">About</h4>
                             <ul className="space-y-2 text-gray-400">
                                 <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
+                                <li><Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link></li>
                                 <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
                                 <li><Link href="#" className="hover:text-emerald-400 transition-colors">Advertise</Link></li>
                             </ul>

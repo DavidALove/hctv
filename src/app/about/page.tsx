@@ -16,6 +16,8 @@ export default function AboutPage() {
                         <Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Now</Link>
                         <Link href="/#schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
                         <Link href="/about" className="text-emerald-400">About</Link>
+                        <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
+                        <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
                         <Link href="/#live">
                             <button className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
                                 Watch Now
@@ -197,7 +199,8 @@ export default function AboutPage() {
                             <h4 className="font-bold mb-4">About</h4>
                             <ul className="space-y-2 text-gray-400">
                                 <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
-                                <li><Link href="#" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
+                                <li><Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link></li>
+                                <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
                                 <li><Link href="#" className="hover:text-emerald-400 transition-colors">Advertise</Link></li>
                             </ul>
                         </div>
