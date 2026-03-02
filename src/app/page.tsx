@@ -118,6 +118,24 @@ export default function HillCountryTV() {
                 description: "Explore the natural beauty, trails, rivers, and adventures of the Hill Country",
                 image: "from-green-900 to-green-700",
                 thumbnail: "/outdoor-recreation-thumbnail.png"
+              },
+              {
+                title: "Sports",
+                description: "High school football, local athletics, and championship coverage from across the region",
+                image: "from-red-900 to-red-700",
+                thumbnail: "/sports-thumbnail.png"
+              },
+              {
+                title: "Real Estate & Development",
+                description: "Market updates, neighborhood spotlights, and growth trends shaping the Hill Country",
+                image: "from-slate-900 to-slate-700",
+                thumbnail: "/real-estate-thumbnail.png"
+              },
+              {
+                title: "Food & Culture",
+                description: "Restaurants, wineries, local chefs, and the lifestyle that defines the region",
+                image: "from-amber-900 to-amber-700",
+                thumbnail: "/food-culture-thumbnail.png"
               }
             ].map((show, idx) => (
               <div key={idx} className="group cursor-pointer">
