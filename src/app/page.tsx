@@ -2,29 +2,12 @@ import React from 'react';
 import { Play, Tv, Calendar, Radio } from 'lucide-react';
 import Link from 'next/link';
 import { ComingSoonButton } from '@/components/ComingSoonButton';
+import { Nav } from '@/components/Nav';
 
 export default function HillCountryTV() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <nav className="absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 to-transparent">
-        <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-          <div className="flex items-center gap-2">
-            <Tv className="w-8 h-8 text-emerald-500" />
-            <span className="text-2xl font-bold tracking-tight">Hill Country TV</span>
-          </div>
-          <div className="hidden md:flex items-center gap-8">
-            <a href="#live" className="hover:text-emerald-400 transition-colors">Live Now</a>
-            <Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
-            <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
-            <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
-            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
-            <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-              Watch Now
-            </ComingSoonButton>
-          </div>
-        </div>
-      </nav>
+      <Nav variant="transparent" />
 
       {/* Hero Section - Split Layout */}
       <section className="relative min-h-screen bg-black pt-24">
@@ -97,7 +80,7 @@ export default function HillCountryTV() {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            What's On <span className="text-emerald-400">Hill Country TV</span>
+            What's On <span className="text-emerald-400">HCTV</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
@@ -175,7 +158,7 @@ export default function HillCountryTV() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Tv className="w-6 h-6 text-emerald-500" />
-                <span className="text-xl font-bold">Hill Country TV</span>
+                <span className="text-xl font-bold">HCTV</span>
               </div>
               <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>

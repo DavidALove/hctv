@@ -17,6 +17,7 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { ComingSoonButton } from '@/components/ComingSoonButton';
+import { Nav } from '@/components/Nav';
 
 const CARDS = [
   {
@@ -164,25 +165,7 @@ export default function GetInvolvedPage() {
 
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <nav className="bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <Tv className="w-8 h-8 text-emerald-500" />
-            <span className="text-2xl font-bold tracking-tight">Hill Country TV</span>
-          </Link>
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Now</Link>
-            <Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
-            <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
-            <Link href="/get-involved" className="text-emerald-400">Get Involved</Link>
-            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
-            <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-              Watch Now
-            </ComingSoonButton>
-          </div>
-        </div>
-      </nav>
+      <Nav activePath="/get-involved" />
 
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
@@ -192,7 +175,7 @@ export default function GetInvolvedPage() {
             Back to Home
           </Link>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Get Involved with <span className="text-emerald-400">Hill Country TV</span>
+            Get Involved with <span className="text-emerald-400">HCTV</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-8">
             We&apos;re building the modern local network for Texas Hill Country — and we&apos;re looking for investors, creators, talent, and partners to help shape what&apos;s next.
@@ -265,7 +248,7 @@ export default function GetInvolvedPage() {
               A modern local network — built for streaming first
             </h2>
             <p className="text-xl text-gray-300">
-              Hill Country TV blends always-on programming, live community coverage, and an on-demand library. Our goal is to give the Hill Country a dedicated channel that highlights what makes this region special — while creating real opportunities for creators, talent, and local brands.
+              HCTV blends always-on programming, live community coverage, and an on-demand library. Our goal is to give the Hill Country a dedicated channel that highlights what makes this region special — while creating real opportunities for creators, talent, and local brands.
             </p>
           </div>
         </div>
@@ -449,7 +432,7 @@ export default function GetInvolvedPage() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Tv className="w-6 h-6 text-emerald-500" />
-                <span className="text-xl font-bold">Hill Country TV</span>
+                <span className="text-xl font-bold">HCTV</span>
               </div>
               <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>

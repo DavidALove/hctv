@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import { Tv, ArrowLeft, Mail, Phone, MapPin, Send } from 'lucide-react';
+import { Nav } from '@/components/Nav';
 import Link from 'next/link';
 import { ComingSoonButton } from '@/components/ComingSoonButton';
 
@@ -53,25 +54,7 @@ export default function ContactPage() {
 
     return (
         <div className="min-h-screen bg-black text-white">
-            {/* Navigation */}
-            <nav className="bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
-                <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-                    <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                        <Tv className="w-8 h-8 text-emerald-500" />
-                        <span className="text-2xl font-bold tracking-tight">Hill Country TV</span>
-                    </Link>
-                    <div className="hidden md:flex items-center gap-8">
-                        <Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Now</Link>
-                        <Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
-                        <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
-                        <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
-                        <Link href="/contact" className="text-emerald-400">Contact</Link>
-                        <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-                            Watch Now
-                        </ComingSoonButton>
-                    </div>
-                </div>
-            </nav>
+            <Nav activePath="/contact" />
 
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
@@ -300,7 +283,7 @@ export default function ContactPage() {
                         <div>
                             <div className="flex items-center gap-2 mb-4">
                                 <Tv className="w-6 h-6 text-emerald-500" />
-                                <span className="text-xl font-bold">Hill Country TV</span>
+                                <span className="text-xl font-bold">HCTV</span>
                             </div>
                             <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
                         </div>

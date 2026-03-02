@@ -15,30 +15,13 @@ import {
 } from 'lucide-react';
 import Link from 'next/link';
 import { ComingSoonButton } from '@/components/ComingSoonButton';
+import { Nav } from '@/components/Nav';
 import { ScheduleCategoryCard } from '@/components/ScheduleCategoryCard';
 
 export default function SchedulePage() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <nav className="bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
-        <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-          <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-            <Tv className="w-8 h-8 text-emerald-500" />
-            <span className="text-2xl font-bold tracking-tight">Hill Country TV</span>
-          </Link>
-          <div className="hidden md:flex items-center gap-8">
-            <Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Now</Link>
-            <Link href="/schedule" className="text-emerald-400">Schedule</Link>
-            <Link href="/about" className="hover:text-emerald-400 transition-colors">About</Link>
-            <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
-            <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
-            <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-              Watch Now
-            </ComingSoonButton>
-          </div>
-        </div>
-      </nav>
+      <Nav activePath="/schedule" />
 
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
@@ -54,7 +37,7 @@ export default function SchedulePage() {
             24/7 programming built around the stories, businesses, and communities of Texas Hill Country.
           </p>
           <p className="text-gray-400 max-w-3xl mb-8">
-            From daily news updates to local sports, festivals, food, and real estate — Hill Country TV delivers a consistent lineup designed for both streaming and broadcast audiences.
+            From daily news updates to local sports, festivals, food, and real estate — HCTV delivers a consistent lineup designed for both streaming and broadcast audiences.
           </p>
           <div className="flex flex-wrap gap-4">
             <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105">
@@ -76,7 +59,7 @@ export default function SchedulePage() {
             A Modern Local <span className="text-emerald-400">Broadcast Model</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            Hill Country TV operates on a structured programming model built around recurring content blocks. Our goal is to create a reliable weekly rhythm so viewers know when to tune in — while giving sponsors consistent placement opportunities.
+            HCTV operates on a structured programming model built around recurring content blocks. Our goal is to create a reliable weekly rhythm so viewers know when to tune in — while giving sponsors consistent placement opportunities.
           </p>
           <p className="text-lg text-gray-400 mb-6">Our schedule is built around:</p>
           <ul className="space-y-3 text-gray-300 text-lg">
@@ -214,7 +197,7 @@ export default function SchedulePage() {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-bold text-white mb-2">What it is</h4>
-                  <p>Flagship programs developed specifically for Hill Country TV.</p>
+                  <p>Flagship programs developed specifically for HCTV.</p>
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-2">Includes</h4>
@@ -290,7 +273,7 @@ export default function SchedulePage() {
             Built for <span className="text-emerald-400">Sponsors & Viewers</span>
           </h2>
           <p className="text-xl text-gray-300 mb-6">
-            Hill Country TV&apos;s programming is structured to support:
+            HCTV&apos;s programming is structured to support:
           </p>
           <ul className="space-y-3 text-gray-300 text-lg mb-6">
             <li>Predictable sponsorship inventory</li>
@@ -355,7 +338,7 @@ export default function SchedulePage() {
             <div>
               <div className="flex items-center gap-2 mb-4">
                 <Tv className="w-6 h-6 text-emerald-500" />
-                <span className="text-xl font-bold">Hill Country TV</span>
+                <span className="text-xl font-bold">HCTV</span>
               </div>
               <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>

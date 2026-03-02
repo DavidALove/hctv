@@ -1,30 +1,13 @@
 import React from 'react';
 import { Tv, ArrowLeft } from 'lucide-react';
+import { Nav } from '@/components/Nav';
 import Link from 'next/link';
 import { ComingSoonButton } from '@/components/ComingSoonButton';
 
 export default function AboutPage() {
     return (
         <div className="min-h-screen bg-black text-white">
-            {/* Navigation */}
-            <nav className="bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50">
-                <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-                    <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-                        <Tv className="w-8 h-8 text-emerald-500" />
-                        <span className="text-2xl font-bold tracking-tight">Hill Country TV</span>
-                    </Link>
-                    <div className="hidden md:flex items-center gap-8">
-                        <Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Now</Link>
-                        <Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link>
-                        <Link href="/about" className="text-emerald-400">About</Link>
-                        <Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link>
-                        <Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link>
-                        <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
-                            Watch Now
-                        </ComingSoonButton>
-                    </div>
-                </div>
-            </nav>
+            <Nav activePath="/about" />
 
             {/* Hero Section */}
             <section className="relative py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
@@ -34,10 +17,10 @@ export default function AboutPage() {
                         Back to Home
                     </Link>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                        About <span className="text-emerald-400">Hill Country TV</span>
+                        About <span className="text-emerald-400">HCTV</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 max-w-4xl">
-                        Hill Country TV was built to serve a community that's often overlooked by national media — the people, businesses, and stories of Texas Hill Country.
+                        HCTV was built to serve a community that's often overlooked by national media — the people, businesses, and stories of Texas Hill Country.
                     </p>
                 </div>
             </section>
@@ -53,7 +36,7 @@ export default function AboutPage() {
                                 We believe local matters. Not just breaking news, but the places you eat, the events you attend, the businesses you trust, and the people shaping life in the Hill Country every day. Our mission is simple: create a modern local television network that actually reflects the region it serves.
                             </p>
                             <p className="text-gray-300 text-lg leading-relaxed">
-                                Hill Country TV combines the reach of traditional television with the flexibility of streaming. Viewers can watch us on connected TV platforms, mobile devices, and — where available — local cable systems. That means our content is accessible whether you're at home, on the road, or watching from anywhere in the country.
+                                HCTV combines the reach of traditional television with the flexibility of streaming. Viewers can watch us on connected TV platforms, mobile devices, and — where available — local cable systems. That means our content is accessible whether you're at home, on the road, or watching from anywhere in the country.
                             </p>
                         </div>
 
@@ -61,7 +44,7 @@ export default function AboutPage() {
                         <div className="mb-16">
                             <h2 className="text-4xl font-bold mb-6 text-white">What We Cover</h2>
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                                Hill Country TV delivers a mix of locally focused programming, including:
+                                HCTV delivers a mix of locally focused programming, including:
                             </p>
                             <ul className="space-y-3 text-gray-300 text-lg mb-6">
                                 <li className="flex items-start gap-3">
@@ -98,7 +81,7 @@ export default function AboutPage() {
                         <div className="mb-16">
                             <h2 className="text-4xl font-bold mb-6 text-white">Built for a New Era of Local TV</h2>
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                                Traditional local television hasn't kept up with how people actually watch content today. Hill Country TV was designed from the ground up as a hybrid network, operating across OTT streaming platforms and linear television.
+                                Traditional local television hasn't kept up with how people actually watch content today. HCTV was designed from the ground up as a hybrid network, operating across OTT streaming platforms and linear television.
                             </p>
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
                                 This approach allows us to:
@@ -130,7 +113,7 @@ export default function AboutPage() {
                         <div className="mb-16">
                             <h2 className="text-4xl font-bold mb-6 text-white">Supporting Local Businesses</h2>
                             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-                                Hill Country TV is more than a media outlet — it's a growth platform for local brands.
+                                HCTV is more than a media outlet — it's a growth platform for local brands.
                             </p>
                             <p className="text-gray-300 text-lg leading-relaxed">
                                 We work directly with businesses, organizations, and community leaders to create advertising and sponsorship opportunities that feel authentic, not intrusive. From traditional commercials to sponsored segments and branded content, our goal is to help local businesses tell their story in a way that connects.
@@ -147,7 +130,7 @@ export default function AboutPage() {
                                 As we grow, we plan to expand original programming, deepen local coverage, and create new ways for viewers and businesses to engage with the region they call home.
                             </p>
                             <p className="text-gray-300 text-lg leading-relaxed mb-4">
-                                Hill Country TV isn't trying to be national.
+                                HCTV isn't trying to be national.
                             </p>
                             <p className="text-xl font-bold text-emerald-400">
                                 We're focused on being local — and doing it right.
@@ -180,7 +163,7 @@ export default function AboutPage() {
                         <div>
                             <div className="flex items-center gap-2 mb-4">
                                 <Tv className="w-6 h-6 text-emerald-500" />
-                                <span className="text-xl font-bold">Hill Country TV</span>
+                                <span className="text-xl font-bold">HCTV</span>
                             </div>
                             <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
                         </div>
