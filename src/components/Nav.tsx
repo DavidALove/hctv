@@ -14,9 +14,7 @@ interface NavProps {
 const navLinks = [
   { href: '/#live', label: 'Live Now' },
   { href: '/schedule', label: 'Schedule' },
-  { href: '/about', label: 'About' },
   { href: '/get-involved', label: 'Get Involved' },
-  { href: '/contact', label: 'Contact' },
 ];
 
 export function Nav({ variant = 'solid', activePath = '' }: NavProps) {
