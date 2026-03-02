@@ -28,7 +28,7 @@ export function Nav({ variant = 'solid', activePath = '' }: NavProps) {
 
   const navClass =
     variant === 'transparent'
-      ? 'absolute top-0 left-0 right-0 z-50 bg-gradient-to-b from-black/80 to-transparent'
+      ? 'sticky top-0 z-50 bg-black/95 border-b border-gray-800 md:absolute md:bg-gradient-to-b md:from-black/80 md:to-transparent md:border-b-0'
       : 'bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50';
 
   return (
@@ -72,7 +72,7 @@ export function Nav({ variant = 'solid', activePath = '' }: NavProps) {
           mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
         }`}
       >
-        <div className="container mx-auto px-6 pb-6 pt-2 border-t border-gray-800">
+        <div className="container mx-auto px-6 pb-6 pt-2 border-t border-gray-800 bg-black">
           <div className="flex flex-col gap-4">
             {navLinks.map((link) => (
               <Link
