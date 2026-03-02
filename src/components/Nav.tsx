@@ -1,8 +1,7 @@
 'use client';
 
 import React, { useState } from 'react';
-import Image from 'next/image';
-import { Menu, X } from 'lucide-react';
+import { Tv, Menu, X } from 'lucide-react';
 import Link from 'next/link';
 import { ComingSoonButton } from '@/components/ComingSoonButton';
 
@@ -35,19 +34,9 @@ export function Nav({ variant = 'solid', activePath = '' }: NavProps) {
   return (
     <nav className={navClass}>
       <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center hover:opacity-80 transition-opacity">
-          <Image
-            src="/logo-hcmg.png"
-            alt="Hill Country Media Group"
-            width={180}
-            height={48}
-            className="h-10 w-auto"
-            priority
-          />
-          {/* Old logo (revert by replacing above with this):
+        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
           <Tv className="w-8 h-8 text-emerald-500" />
           <span className="text-2xl font-bold tracking-tight">HCTV</span>
-          */}
         </Link>
 
         {/* Desktop nav */}
