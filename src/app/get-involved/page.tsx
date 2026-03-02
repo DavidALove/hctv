@@ -164,20 +164,20 @@ export default function GetInvolvedPage() {
   };
 
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white text-gray-900 dark:bg-black dark:text-white">
       <Nav activePath="/get-involved" />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
+      <section className="relative py-20 bg-gradient-to-br from-blue-50 to-slate-50 dark:from-blue-900/20 dark:to-slate-900/20">
         <div className="container mx-auto px-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors mb-8">
+          <Link href="/" className="inline-flex items-center gap-2 text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors mb-8">
             <ArrowLeft className="w-5 h-5" />
             Back to Home
           </Link>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Get Involved with <span className="text-blue-400">BluebonnetTV</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-8">
+          <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300 max-w-3xl mb-8">
             We&apos;re building the modern local network for Texas Hill Country — and we&apos;re looking for investors, creators, talent, and partners to help shape what&apos;s next.
           </p>
           <div className="flex flex-wrap gap-4 mb-4">
@@ -187,24 +187,24 @@ export default function GetInvolvedPage() {
               </button>
             </a>
             <a href="mailto:info@hillcountrymediagroup.com">
-              <button className="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-white/20">
+              <button className="bg-gray-200 hover:bg-gray-300 dark:bg-white/10 dark:hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-gray-300 dark:border-white/20">
                 Email Us
               </button>
             </a>
           </div>
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-500 dark:text-gray-400 text-sm">
             Streaming 24/7 • Live events • On-demand library • Built for web + connected TV
           </p>
         </div>
       </section>
 
       {/* Ways to Work With Us */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-gray-50 dark:bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
             Ways to Work <span className="text-blue-400">With Us</span>
           </h2>
-          <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-16">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto text-center mb-16">
             Whether you&apos;re backing the vision, bringing a show idea, or joining the production team — there&apos;s a place to plug in. Choose the path that fits you.
           </p>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-7xl mx-auto">
@@ -213,14 +213,14 @@ export default function GetInvolvedPage() {
               return (
                 <div
                   key={idx}
-                  className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors"
+                  className="bg-white dark:bg-gradient-to-br dark:from-gray-900 dark:to-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500/50 transition-colors shadow-sm dark:shadow-none"
                 >
                   <div className="bg-blue-600/20 p-3 rounded-lg w-fit mb-4">
                     <Icon className="w-6 h-6 text-blue-400" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{card.headline}</h3>
-                  <p className="text-gray-400 text-sm mb-4">{card.body}</p>
-                  <ul className="space-y-1 text-gray-400 text-sm mb-4">
+                  <p className="text-gray-600 dark:text-gray-400 text-sm mb-4">{card.body}</p>
+                  <ul className="space-y-1 text-gray-600 dark:text-gray-400 text-sm mb-4">
                     {card.bullets.map((b, i) => (
                       <li key={i} className="flex items-start gap-2">
                         <span className="text-blue-400">•</span>
@@ -229,7 +229,7 @@ export default function GetInvolvedPage() {
                     ))}
                   </ul>
                   <a href="#form">
-                    <span className="text-blue-400 font-medium hover:text-blue-300 transition-colors text-sm">
+                    <span className="text-blue-500 dark:text-blue-400 font-medium hover:text-blue-600 dark:hover:text-blue-300 transition-colors text-sm">
                       {card.cta} →
                     </span>
                   </a>
@@ -247,7 +247,7 @@ export default function GetInvolvedPage() {
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               A modern local network — built for streaming first
             </h2>
-            <p className="text-xl text-gray-300">
+            <p className="text-xl text-gray-600 dark:text-gray-300">
               BluebonnetTV blends always-on programming, live community coverage, and an on-demand library. Our goal is to give the Hill Country a dedicated channel that highlights what makes this region special — while creating real opportunities for creators, talent, and local brands.
             </p>
           </div>
@@ -255,24 +255,24 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Intake Form */}
-      <section id="form" className="py-20 bg-black">
+      <section id="form" className="py-20 bg-gray-50 dark:bg-black">
         <div className="container mx-auto px-6">
           <div className="max-w-2xl mx-auto">
             <h2 className="text-4xl font-bold mb-4">Submit your interest</h2>
-            <p className="text-gray-400 mb-8">
+            <p className="text-gray-600 dark:text-gray-400 mb-8">
               Choose the category that best fits you. We&apos;ll route it to the right team and follow up.
             </p>
 
             {submitted ? (
-              <div className="bg-blue-900/20 border border-blue-500/30 p-8 rounded-xl text-center">
-                <p className="text-xl text-blue-400 font-medium">
+              <div className="bg-blue-50 dark:bg-blue-900/20 border border-blue-200 dark:border-blue-500/30 p-8 rounded-xl text-center">
+                <p className="text-xl text-blue-600 dark:text-blue-400 font-medium">
                   Thanks — we received it. If it&apos;s a fit, we&apos;ll reach back out soon.
                 </p>
               </div>
             ) : (
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">Full Name *</label>
+                  <label htmlFor="name" className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Full Name *</label>
                   <input
                     type="text"
                     id="name"
@@ -280,12 +280,12 @@ export default function GetInvolvedPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
                     placeholder="Your name"
                   />
                 </div>
                 <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-gray-300 mb-2">Email *</label>
+                  <label htmlFor="email" className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Email *</label>
                   <input
                     type="email"
                     id="email"
@@ -293,31 +293,31 @@ export default function GetInvolvedPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
                     placeholder="you@example.com"
                   />
                 </div>
                 <div>
-                  <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">Phone (optional)</label>
+                  <label htmlFor="phone" className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Phone (optional)</label>
                   <input
                     type="tel"
                     id="phone"
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
                     placeholder="(512) 555-0123"
                   />
                 </div>
                 <div>
-                  <label htmlFor="category" className="block text-sm font-medium text-gray-300 mb-2">Category *</label>
+                  <label htmlFor="category" className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Category *</label>
                   <select
                     id="category"
                     name="category"
                     required
                     value={formData.category}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
                   >
                     <option value="">Select a category</option>
                     {CATEGORIES.map((cat) => (
@@ -326,31 +326,31 @@ export default function GetInvolvedPage() {
                   </select>
                 </div>
                 <div>
-                  <label htmlFor="location" className="block text-sm font-medium text-gray-300 mb-2">Location (optional)</label>
+                  <label htmlFor="location" className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Location (optional)</label>
                   <input
                     type="text"
                     id="location"
                     name="location"
                     value={formData.location}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
                     placeholder="City, TX"
                   />
                 </div>
                 <div>
-                  <label htmlFor="links" className="block text-sm font-medium text-gray-300 mb-2">Links (optional)</label>
+                  <label htmlFor="links" className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Links (optional)</label>
                   <input
                     type="url"
                     id="links"
                     name="links"
                     value={formData.links}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white"
                     placeholder="Portfolio / reel / YouTube / Vimeo / LinkedIn"
                   />
                 </div>
                 <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-gray-300 mb-2">Message *</label>
+                  <label htmlFor="message" className="block text-sm font-medium text-gray-600 dark:text-gray-300 mb-2">Message *</label>
                   <textarea
                     id="message"
                     name="message"
@@ -358,7 +358,7 @@ export default function GetInvolvedPage() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white resize-none"
+                    className="w-full px-4 py-3 bg-white dark:bg-gray-900 border border-gray-300 dark:border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-gray-900 dark:text-white resize-none"
                     placeholder="Tell us about yourself and your interest..."
                   />
                 </div>
@@ -384,8 +384,8 @@ export default function GetInvolvedPage() {
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-blue-400" />
               <div>
-                <p className="text-sm text-gray-400">General</p>
-                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <p className="text-sm text-gray-500 dark:text-gray-400">General</p>
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
                   info@hillcountrymediagroup.com
                 </a>
               </div>
@@ -393,8 +393,8 @@ export default function GetInvolvedPage() {
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-blue-400" />
               <div>
-                <p className="text-sm text-gray-400">Advertising</p>
-                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <p className="text-sm text-gray-500 dark:text-gray-400">Advertising</p>
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
                   info@hillcountrymediagroup.com
                 </a>
               </div>
@@ -402,8 +402,8 @@ export default function GetInvolvedPage() {
             <div className="flex items-center gap-3">
               <Mail className="w-5 h-5 text-blue-400" />
               <div>
-                <p className="text-sm text-gray-400">News tips</p>
-                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
+                <p className="text-sm text-gray-500 dark:text-gray-400">News tips</p>
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-500 hover:text-blue-600 dark:text-blue-400 dark:hover:text-blue-300 transition-colors">
                   info@hillcountrymediagroup.com
                 </a>
               </div>
@@ -416,7 +416,7 @@ export default function GetInvolvedPage() {
       <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Start Watching Today</h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             Free to watch. Available on Apple TV, Roku, iPhone, and web.
           </p>
           <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
@@ -426,7 +426,7 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 py-12">
+      <footer className="bg-gray-100 dark:bg-black border-t border-gray-200 dark:border-gray-800 py-12">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -434,28 +434,28 @@ export default function GetInvolvedPage() {
                 <Tv className="w-6 h-6 text-blue-500" />
                 <span className="text-xl font-bold">BluebonnetTV</span>
               </div>
-              <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
+              <p className="text-gray-500 dark:text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Watch</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/#live" className="hover:text-blue-400 transition-colors">Live Stream</Link></li>
-                <li><Link href="/schedule" className="hover:text-blue-400 transition-colors">Schedule</Link></li>
-                <li><Link href="/#" className="hover:text-blue-400 transition-colors">On Demand</Link></li>
+              <ul className="space-y-2 text-gray-500 dark:text-gray-400">
+                <li><Link href="/#live" className="hover:text-blue-500 transition-colors">Live Stream</Link></li>
+                <li><Link href="/schedule" className="hover:text-blue-500 transition-colors">Schedule</Link></li>
+                <li><Link href="/#" className="hover:text-blue-500 transition-colors">On Demand</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">About</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/about" className="hover:text-blue-400 transition-colors">Our Story</Link></li>
-                <li><Link href="/get-involved" className="hover:text-blue-400 transition-colors">Get Involved</Link></li>
-                <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
-                <li><Link href="#" className="hover:text-blue-400 transition-colors">Advertise</Link></li>
+              <ul className="space-y-2 text-gray-500 dark:text-gray-400">
+                <li><Link href="/about" className="hover:text-blue-500 transition-colors">Our Story</Link></li>
+                <li><Link href="/get-involved" className="hover:text-blue-500 transition-colors">Get Involved</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-500 transition-colors">Contact</Link></li>
+                <li><Link href="#" className="hover:text-blue-500 transition-colors">Advertise</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">Platforms</h4>
-              <ul className="space-y-2 text-gray-400">
+              <ul className="space-y-2 text-gray-500 dark:text-gray-400">
                 <li>Apple TV</li>
                 <li>Roku</li>
                 <li>iPhone/iPad</li>
@@ -463,7 +463,7 @@ export default function GetInvolvedPage() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-gray-500 dark:text-gray-400">
             <p>&copy; 2026 Hill Country Media Group. All rights reserved.</p>
           </div>
         </div>

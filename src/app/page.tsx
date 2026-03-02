@@ -7,11 +7,11 @@ import { HeroVideo } from '@/components/HeroVideo';
 
 export default function HillCountryTV() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-white text-gray-900 dark:bg-black dark:text-white">
       <Nav variant="transparent" />
 
       {/* Hero Section - Split Layout */}
-      <section className="relative min-h-screen bg-black pt-24">
+      <section className="relative min-h-screen bg-gray-50 dark:bg-black pt-24">
         <div className="container mx-auto px-6 py-12">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center min-h-[calc(100vh-12rem)]">
 
@@ -19,9 +19,9 @@ export default function HillCountryTV() {
             <div className="space-y-6 lg:pr-8">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
                 BluebonnetTV
-                <span className="block text-blue-400">Streaming Now</span>
+                <span className="block text-blue-500 dark:text-blue-400">Streaming Now</span>
               </h1>
-              <p className="text-xl md:text-2xl text-gray-300">
+              <p className="text-xl md:text-2xl text-gray-600 dark:text-gray-300">
                 Local stories, events, and culture from the heart of Texas Hill Country — live and on-demand
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
@@ -29,7 +29,7 @@ export default function HillCountryTV() {
                   <Play className="w-5 h-5" />
                   Watch Live
                 </ComingSoonButton>
-                <ComingSoonButton className="bg-white/10 hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-white/20">
+                <ComingSoonButton className="bg-gray-200 hover:bg-gray-300 dark:bg-white/10 dark:hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 border border-gray-300 dark:border-white/20">
                   View Schedule
                 </ComingSoonButton>
               </div>
@@ -52,33 +52,33 @@ export default function HillCountryTV() {
       </section>
 
       {/* Quick Info Bar */}
-      <section className="bg-gradient-to-r from-blue-900/40 to-slate-900/40 backdrop-blur-sm border-y border-blue-500/20">
+      <section className="bg-gradient-to-r from-blue-100 to-slate-100 dark:from-blue-900/40 dark:to-slate-900/40 backdrop-blur-sm border-y border-blue-200 dark:border-blue-500/20">
         <div className="container mx-auto px-6 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
-              <Radio className="w-8 h-8 mx-auto text-blue-400" />
+              <Radio className="w-8 h-8 mx-auto text-blue-500" />
               <h3 className="font-bold text-lg">24/7 Streaming</h3>
-              <p className="text-gray-400">Always-on local content</p>
+              <p className="text-gray-500 dark:text-gray-400">Always-on local content</p>
             </div>
             <div className="space-y-2">
-              <Calendar className="w-8 h-8 mx-auto text-blue-400" />
+              <Calendar className="w-8 h-8 mx-auto text-blue-500" />
               <h3 className="font-bold text-lg">Live Events</h3>
-              <p className="text-gray-400">Community happenings as they unfold</p>
+              <p className="text-gray-500 dark:text-gray-400">Community happenings as they unfold</p>
             </div>
             <div className="space-y-2">
-              <Tv className="w-8 h-8 mx-auto text-blue-400" />
+              <Tv className="w-8 h-8 mx-auto text-blue-500" />
               <h3 className="font-bold text-lg">On-Demand Library</h3>
-              <p className="text-gray-400">Watch anytime, anywhere</p>
+              <p className="text-gray-500 dark:text-gray-400">Watch anytime, anywhere</p>
             </div>
           </div>
         </div>
       </section>
 
       {/* What's On Section */}
-      <section className="py-20 bg-black">
+      <section className="py-20 bg-gray-50 dark:bg-black">
         <div className="container mx-auto px-6">
-          <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            What's On <span className="text-blue-400">BluebonnetTV</span>
+            <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
+            What's On <span className="text-blue-500">BluebonnetTV</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
@@ -127,7 +127,7 @@ export default function HillCountryTV() {
                   <div className="absolute inset-0 bg-black/40 group-hover:bg-black/20 transition-colors" />
                 </div>
                 <h3 className="text-xl font-bold mb-2">{show.title}</h3>
-                <p className="text-gray-400">{show.description}</p>
+                <p className="text-gray-500 dark:text-gray-400">{show.description}</p>
               </div>
             ))}
           </div>
@@ -135,12 +135,12 @@ export default function HillCountryTV() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
+      <section className="py-20 bg-gradient-to-br from-blue-50 to-slate-50 dark:from-blue-900/20 dark:to-slate-900/20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Start Watching Today
           </h2>
-          <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-8 max-w-2xl mx-auto">
             Free to watch. Available on Apple TV, Roku, iPhone, and web.
           </p>
           <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
@@ -150,7 +150,7 @@ export default function HillCountryTV() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black border-t border-gray-800 py-12">
+      <footer className="bg-gray-100 dark:bg-black border-t border-gray-200 dark:border-gray-800 py-12">
         <div className="container mx-auto px-6">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -158,23 +158,23 @@ export default function HillCountryTV() {
                 <Tv className="w-6 h-6 text-blue-500" />
                 <span className="text-xl font-bold">BluebonnetTV</span>
               </div>
-              <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
+              <p className="text-gray-500 dark:text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Watch</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Live Stream</a></li>
-                <li><Link href="/schedule" className="hover:text-blue-400 transition-colors">Schedule</Link></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">On Demand</a></li>
+              <ul className="space-y-2 text-gray-500 dark:text-gray-400">
+                <li><a href="#" className="hover:text-blue-500 transition-colors">Live Stream</a></li>
+                <li><Link href="/schedule" className="hover:text-blue-500 transition-colors">Schedule</Link></li>
+                <li><a href="#" className="hover:text-blue-500 transition-colors">On Demand</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">About</h4>
-              <ul className="space-y-2 text-gray-400">
-                <li><Link href="/about" className="hover:text-blue-400 transition-colors">Our Story</Link></li>
-                <li><Link href="/get-involved" className="hover:text-blue-400 transition-colors">Get Involved</Link></li>
-                <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
-                <li><a href="#" className="hover:text-blue-400 transition-colors">Advertise</a></li>
+              <ul className="space-y-2 text-gray-500 dark:text-gray-400">
+                <li><Link href="/about" className="hover:text-blue-500 transition-colors">Our Story</Link></li>
+                <li><Link href="/get-involved" className="hover:text-blue-500 transition-colors">Get Involved</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-500 transition-colors">Contact</Link></li>
+                <li><a href="#" className="hover:text-blue-500 transition-colors">Advertise</a></li>
               </ul>
             </div>
             <div>
@@ -187,7 +187,7 @@ export default function HillCountryTV() {
               </ul>
             </div>
           </div>
-          <div className="border-t border-gray-800 pt-8 text-center text-gray-400">
+          <div className="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-gray-500 dark:text-gray-400">
             <p>&copy; 2026 Hill Country Media Group. All rights reserved.</p>
           </div>
         </div>

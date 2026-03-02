@@ -31,7 +31,7 @@ export function HeroVideo() {
 
   return (
     <div
-      className="relative aspect-video rounded-2xl overflow-hidden border border-blue-500/20 shadow-2xl shadow-blue-500/10 cursor-pointer group"
+      className="relative aspect-video rounded-2xl overflow-hidden border border-blue-200 dark:border-blue-500/20 shadow-2xl shadow-blue-500/10 cursor-pointer group"
       onClick={handleClick}
     >
       <video
@@ -47,7 +47,7 @@ export function HeroVideo() {
       />
       {!isPlaying && (
         <div className="absolute inset-0 flex items-center justify-center bg-black/30 group-hover:bg-black/20 transition-colors">
-          <div className="w-20 h-20 rounded-full bg-blue-600/90 flex items-center justify-center group-hover:scale-110 transition-transform">
+          <div className="w-20 h-20 rounded-full bg-blue-500 dark:bg-blue-600/90 flex items-center justify-center group-hover:scale-110 transition-transform">
             <Play className="w-10 h-10 text-white ml-1" fill="white" />
           </div>
         </div>
