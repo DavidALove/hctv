@@ -3,6 +3,7 @@ import { Play, Tv, Calendar, Radio } from 'lucide-react';
 import Link from 'next/link';
 import { ComingSoonButton } from '@/components/ComingSoonButton';
 import { Nav } from '@/components/Nav';
+import { HeroVideo } from '@/components/HeroVideo';
 
 export default function HillCountryTV() {
   return (
@@ -43,10 +44,7 @@ export default function HillCountryTV() {
               </div>
 
               {/* Video Player Container */}
-              <div
-                className="relative aspect-video rounded-2xl overflow-hidden border border-emerald-500/20 shadow-2xl shadow-emerald-500/10 bg-cover bg-center"
-                style={{ backgroundImage: "url(/hero-video-thumbnail.png)" }}
-              />
+              <HeroVideo />
             </div>
 
           </div>
