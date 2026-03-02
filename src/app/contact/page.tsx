@@ -57,14 +57,14 @@ export default function ContactPage() {
             <Nav activePath="/contact" />
 
             {/* Hero Section */}
-            <section className="relative py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+            <section className="relative py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
                 <div className="container mx-auto px-6">
-                    <Link href="/" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-8">
+                    <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors mb-8">
                         <ArrowLeft className="w-5 h-5" />
                         Back to Home
                     </Link>
                     <h1 className="text-5xl md:text-7xl font-bold mb-6">
-                        Get in <span className="text-emerald-400">Touch</span>
+                        Get in <span className="text-blue-400">Touch</span>
                     </h1>
                     <p className="text-xl md:text-2xl text-gray-300 max-w-3xl">
                         Have a question, story idea, or interested in advertising? We'd love to hear from you.
@@ -92,7 +92,7 @@ export default function ContactPage() {
                                         required
                                         value={formData.name}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                                         placeholder="John Doe"
                                     />
                                 </div>
@@ -108,7 +108,7 @@ export default function ContactPage() {
                                         required
                                         value={formData.email}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                                         placeholder="john@example.com"
                                     />
                                 </div>
@@ -123,7 +123,7 @@ export default function ContactPage() {
                                         required
                                         value={formData.subject}
                                         onChange={handleChange}
-                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                                     >
                                         <option value="">Select a subject</option>
                                         <option value="general">General Inquiry</option>
@@ -146,7 +146,7 @@ export default function ContactPage() {
                                         value={formData.message}
                                         onChange={handleChange}
                                         rows={6}
-                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white resize-none"
+                                        className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white resize-none"
                                         placeholder="Tell us more about your inquiry..."
                                     />
                                 </div>
@@ -154,7 +154,7 @@ export default function ContactPage() {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className={`w-full bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                                    className={`w-full bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                                 >
                                     <Send className="w-5 h-5" />
                                     {isSubmitting ? 'Sending...' : 'Send Message'}
@@ -173,14 +173,14 @@ export default function ContactPage() {
 
                             {/* Contact Cards */}
                             <div className="space-y-6">
-                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-emerald-500/50 transition-colors">
+                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors">
                                     <div className="flex items-start gap-4">
-                                        <div className="bg-emerald-600/20 p-3 rounded-lg">
-                                            <Mail className="w-6 h-6 text-emerald-400" />
+                                        <div className="bg-blue-600/20 p-3 rounded-lg">
+                                            <Mail className="w-6 h-6 text-blue-400" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-lg mb-2">Email</h3>
-                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
                                                 info@hillcountrymediagroup.com
                                             </a>
                                             <p className="text-gray-400 text-sm mt-1">For general inquiries</p>
@@ -188,14 +188,14 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-emerald-500/50 transition-colors">
+                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors">
                                     <div className="flex items-start gap-4">
-                                        <div className="bg-emerald-600/20 p-3 rounded-lg">
-                                            <Mail className="w-6 h-6 text-emerald-400" />
+                                        <div className="bg-blue-600/20 p-3 rounded-lg">
+                                            <Mail className="w-6 h-6 text-blue-400" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-lg mb-2">Advertising</h3>
-                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
                                                 info@hillcountrymediagroup.com
                                             </a>
                                             <p className="text-gray-400 text-sm mt-1">For advertising opportunities</p>
@@ -203,14 +203,14 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-emerald-500/50 transition-colors">
+                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors">
                                     <div className="flex items-start gap-4">
-                                        <div className="bg-emerald-600/20 p-3 rounded-lg">
-                                            <Mail className="w-6 h-6 text-emerald-400" />
+                                        <div className="bg-blue-600/20 p-3 rounded-lg">
+                                            <Mail className="w-6 h-6 text-blue-400" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-lg mb-2">News Tips</h3>
-                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                                            <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
                                                 info@hillcountrymediagroup.com
                                             </a>
                                             <p className="text-gray-400 text-sm mt-1">Share your story ideas</p>
@@ -218,10 +218,10 @@ export default function ContactPage() {
                                     </div>
                                 </div>
 
-                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-emerald-500/50 transition-colors">
+                                <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors">
                                     <div className="flex items-start gap-4">
-                                        <div className="bg-emerald-600/20 p-3 rounded-lg">
-                                            <MapPin className="w-6 h-6 text-emerald-400" />
+                                        <div className="bg-blue-600/20 p-3 rounded-lg">
+                                            <MapPin className="w-6 h-6 text-blue-400" />
                                         </div>
                                         <div>
                                             <h3 className="font-bold text-lg mb-2">Location</h3>
@@ -235,16 +235,16 @@ export default function ContactPage() {
                             </div>
 
                             {/* Business Hours */}
-                            <div className="bg-gradient-to-br from-emerald-900/20 to-slate-900/20 p-6 rounded-xl border border-emerald-500/20">
+                            <div className="bg-gradient-to-br from-blue-900/20 to-slate-900/20 p-6 rounded-xl border border-blue-500/20">
                                 <h3 className="font-bold text-xl mb-4">Business Hours</h3>
                                 <div className="space-y-2 text-gray-300">
                                     <div className="flex justify-between">
                                         <span>Monday - Friday</span>
-                                        <span className="text-emerald-400">9:00 AM - 6:00 PM</span>
+                                        <span className="text-blue-400">9:00 AM - 6:00 PM</span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span>Saturday</span>
-                                        <span className="text-emerald-400">10:00 AM - 4:00 PM</span>
+                                        <span className="text-blue-400">10:00 AM - 4:00 PM</span>
                                     </div>
                                     <div className="flex justify-between">
                                         <span>Sunday</span>
@@ -262,7 +262,7 @@ export default function ContactPage() {
             </section>
 
             {/* CTA Section */}
-            <section className="py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+            <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
                 <div className="container mx-auto px-6 text-center">
                     <h2 className="text-4xl md:text-5xl font-bold mb-6">
                         Start Watching Today
@@ -270,7 +270,7 @@ export default function ContactPage() {
                     <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
                         Free to watch. Available on Apple TV, Roku, iPhone, and web.
                     </p>
-                    <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
+                    <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
                         Watch Live Now
                     </ComingSoonButton>
                 </div>
@@ -282,26 +282,26 @@ export default function ContactPage() {
                     <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                         <div>
                             <div className="flex items-center gap-2 mb-4">
-                                <Tv className="w-6 h-6 text-emerald-500" />
-                                <span className="text-xl font-bold">HCTV</span>
+                                <Tv className="w-6 h-6 text-blue-500" />
+                                <span className="text-xl font-bold">BluebonnetTV</span>
                             </div>
                             <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
                         </div>
                         <div>
                             <h4 className="font-bold mb-4">Watch</h4>
                             <ul className="space-y-2 text-gray-400">
-                                <li><Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Stream</Link></li>
-                                <li><Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link></li>
-                                <li><Link href="/#" className="hover:text-emerald-400 transition-colors">On Demand</Link></li>
+                                <li><Link href="/#live" className="hover:text-blue-400 transition-colors">Live Stream</Link></li>
+                                <li><Link href="/schedule" className="hover:text-blue-400 transition-colors">Schedule</Link></li>
+                                <li><Link href="/#" className="hover:text-blue-400 transition-colors">On Demand</Link></li>
                             </ul>
                         </div>
                         <div>
                             <h4 className="font-bold mb-4">About</h4>
                             <ul className="space-y-2 text-gray-400">
-                                <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
-                                <li><Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link></li>
-                                <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
-                                <li><Link href="#" className="hover:text-emerald-400 transition-colors">Advertise</Link></li>
+                                <li><Link href="/about" className="hover:text-blue-400 transition-colors">Our Story</Link></li>
+                                <li><Link href="/get-involved" className="hover:text-blue-400 transition-colors">Get Involved</Link></li>
+                                <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+                                <li><Link href="#" className="hover:text-blue-400 transition-colors">Advertise</Link></li>
                             </ul>
                         </div>
                         <div>

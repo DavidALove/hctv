@@ -24,23 +24,23 @@ export default function SchedulePage() {
       <Nav activePath="/schedule" />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="relative py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-8">
+          <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors mb-8">
             <ArrowLeft className="w-5 h-5" />
             Back to Home
           </Link>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Schedule & <span className="text-emerald-400">Programming</span>
+            Schedule & <span className="text-blue-400">Programming</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-4">
             24/7 programming built around the stories, businesses, and communities of Texas Hill Country.
           </p>
           <p className="text-gray-400 max-w-3xl mb-8">
-            From daily news updates to local sports, festivals, food, and real estate — HCTV delivers a consistent lineup designed for both streaming and broadcast audiences.
+            From daily news updates to local sports, festivals, food, and real estate — BluebonnetTV delivers a consistent lineup designed for both streaming and broadcast audiences.
           </p>
           <div className="flex flex-wrap gap-4">
-            <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105">
+            <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105">
               Watch Live
             </ComingSoonButton>
             <Link href="/get-involved#form">
@@ -56,10 +56,10 @@ export default function SchedulePage() {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6 max-w-4xl">
           <h2 className="text-4xl md:text-5xl font-bold mb-8 text-center">
-            A Modern Local <span className="text-emerald-400">Broadcast Model</span>
+            A Modern Local <span className="text-blue-400">Broadcast Model</span>
           </h2>
           <p className="text-xl text-gray-300 mb-8">
-            HCTV operates on a structured programming model built around recurring content blocks. Our goal is to create a reliable weekly rhythm so viewers know when to tune in — while giving sponsors consistent placement opportunities.
+            BluebonnetTV operates on a structured programming model built around recurring content blocks. Our goal is to create a reliable weekly rhythm so viewers know when to tune in — while giving sponsors consistent placement opportunities.
           </p>
           <p className="text-lg text-gray-400 mb-6">Our schedule is built around:</p>
           <ul className="space-y-3 text-gray-300 text-lg">
@@ -72,7 +72,7 @@ export default function SchedulePage() {
               'Rotational replay windows for streaming viewers',
             ].map((item, i) => (
               <li key={i} className="flex items-start gap-3">
-                <span className="text-emerald-400 mt-1">•</span>
+                <span className="text-blue-400 mt-1">•</span>
                 <span>{item}</span>
               </li>
             ))}
@@ -81,10 +81,10 @@ export default function SchedulePage() {
       </section>
 
       {/* Section 2 — Core Programming Categories */}
-      <section className="py-20 bg-gradient-to-br from-emerald-900/10 to-slate-900/10">
+      <section className="py-20 bg-gradient-to-br from-blue-900/10 to-slate-900/10">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Core Programming <span className="text-emerald-400">Categories</span>
+            Core Programming <span className="text-blue-400">Categories</span>
           </h2>
           <div className="max-w-4xl mx-auto space-y-4">
             <ScheduleCategoryCard icon={Newspaper} title="Local News & Community Updates">
@@ -197,7 +197,7 @@ export default function SchedulePage() {
               <div className="space-y-4">
                 <div>
                   <h4 className="font-bold text-white mb-2">What it is</h4>
-                  <p>Flagship programs developed specifically for HCTV.</p>
+                  <p>Flagship programs developed specifically for BluebonnetTV.</p>
                 </div>
                 <div>
                   <h4 className="font-bold text-white mb-2">Includes</h4>
@@ -217,11 +217,11 @@ export default function SchedulePage() {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Sample Weekly <span className="text-emerald-400">Programming Rhythm</span>
+            Sample Weekly <span className="text-blue-400">Programming Rhythm</span>
           </h2>
           <div className="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700">
-              <h3 className="text-xl font-bold mb-6 text-emerald-400">Weekday Structure</h3>
+              <h3 className="text-xl font-bold mb-6 text-blue-400">Weekday Structure</h3>
               <div className="space-y-6">
                 <div>
                   <p className="font-bold text-white mb-2">Morning</p>
@@ -242,22 +242,22 @@ export default function SchedulePage() {
               </div>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700">
-              <h3 className="text-xl font-bold mb-6 text-emerald-400">Weekend Focus</h3>
+              <h3 className="text-xl font-bold mb-6 text-blue-400">Weekend Focus</h3>
               <ul className="space-y-3 text-gray-400">
                 <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-emerald-400" />
+                  <ChevronRight className="w-4 h-4 text-blue-400" />
                   Festival Coverage
                 </li>
                 <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-emerald-400" />
+                  <ChevronRight className="w-4 h-4 text-blue-400" />
                   Long-form features
                 </li>
                 <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-emerald-400" />
+                  <ChevronRight className="w-4 h-4 text-blue-400" />
                   Sports Highlights
                 </li>
                 <li className="flex items-center gap-2">
-                  <ChevronRight className="w-4 h-4 text-emerald-400" />
+                  <ChevronRight className="w-4 h-4 text-blue-400" />
                   Lifestyle marathons
                 </li>
               </ul>
@@ -267,13 +267,13 @@ export default function SchedulePage() {
       </section>
 
       {/* Section 4 — Built for Sponsors & Viewers */}
-      <section className="py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6 max-w-3xl text-center">
           <h2 className="text-4xl font-bold mb-6">
-            Built for <span className="text-emerald-400">Sponsors & Viewers</span>
+            Built for <span className="text-blue-400">Sponsors & Viewers</span>
           </h2>
           <p className="text-xl text-gray-300 mb-6">
-            HCTV&apos;s programming is structured to support:
+            BluebonnetTV&apos;s programming is structured to support:
           </p>
           <ul className="space-y-3 text-gray-300 text-lg mb-6">
             <li>Predictable sponsorship inventory</li>
@@ -291,11 +291,11 @@ export default function SchedulePage() {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            Want to Be Part of the <span className="text-emerald-400">Lineup?</span>
+            Want to Be Part of the <span className="text-blue-400">Lineup?</span>
           </h2>
           <div className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto">
             <Link href="/get-involved#form">
-              <button className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold transition-all hover:scale-105">
+              <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold transition-all hover:scale-105">
                 Submit a Show Idea
               </button>
             </Link>
@@ -319,13 +319,13 @@ export default function SchedulePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Start Watching Today</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Free to watch. Available on Apple TV, Roku, iPhone, and web.
           </p>
-          <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
+          <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
             Watch Live Now
           </ComingSoonButton>
         </div>
@@ -337,26 +337,26 @@ export default function SchedulePage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Tv className="w-6 h-6 text-emerald-500" />
-                <span className="text-xl font-bold">HCTV</span>
+                <Tv className="w-6 h-6 text-blue-500" />
+                <span className="text-xl font-bold">BluebonnetTV</span>
               </div>
               <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Watch</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Stream</Link></li>
-                <li><Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link></li>
-                <li><Link href="/#" className="hover:text-emerald-400 transition-colors">On Demand</Link></li>
+                <li><Link href="/#live" className="hover:text-blue-400 transition-colors">Live Stream</Link></li>
+                <li><Link href="/schedule" className="hover:text-blue-400 transition-colors">Schedule</Link></li>
+                <li><Link href="/#" className="hover:text-blue-400 transition-colors">On Demand</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">About</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
-                <li><Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link></li>
-                <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
-                <li><Link href="#" className="hover:text-emerald-400 transition-colors">Advertise</Link></li>
+                <li><Link href="/about" className="hover:text-blue-400 transition-colors">Our Story</Link></li>
+                <li><Link href="/get-involved" className="hover:text-blue-400 transition-colors">Get Involved</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+                <li><Link href="#" className="hover:text-blue-400 transition-colors">Advertise</Link></li>
               </ul>
             </div>
             <div>

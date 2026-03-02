@@ -32,25 +32,25 @@ export function Nav({ variant = 'solid', activePath = '' }: NavProps) {
       : 'bg-black/95 backdrop-blur-sm border-b border-gray-800 sticky top-0 z-50';
 
   return (
-    <nav className={navClass}>
-      <div className="container mx-auto px-6 py-6 flex items-center justify-between">
-        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity">
-          <Tv className="w-8 h-8 text-emerald-500" />
-          <span className="text-2xl font-bold tracking-tight">HCTV</span>
+    <nav className={`${navClass} w-full`}>
+      <div className="w-full max-w-7xl mx-auto px-6 py-6 flex items-center justify-between">
+        <Link href="/" className="flex items-center gap-2 hover:opacity-80 transition-opacity shrink-0">
+          <Tv className="w-8 h-8 text-blue-500" />
+          <span className="text-2xl font-bold tracking-tight">BluebonnetTV</span>
         </Link>
 
-        {/* Desktop nav */}
-        <div className="hidden md:flex items-center gap-8">
+        {/* Desktop nav - pushed to right */}
+        <div className="hidden md:flex items-center gap-8 shrink-0">
           {navLinks.map((link) => (
             <Link
               key={link.href}
               href={link.href}
-              className={isActive(link.href) ? 'text-emerald-400' : 'hover:text-emerald-400 transition-colors'}
+              className={isActive(link.href) ? 'text-blue-400' : 'hover:text-blue-400 transition-colors'}
             >
               {link.label}
             </Link>
           ))}
-          <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
+          <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-6 py-2.5 rounded-lg font-medium transition-colors">
             Watch Now
           </ComingSoonButton>
         </div>
@@ -59,7 +59,7 @@ export function Nav({ variant = 'solid', activePath = '' }: NavProps) {
         <button
           type="button"
           onClick={() => setMobileOpen(!mobileOpen)}
-          className="md:hidden p-2 text-white hover:text-emerald-400 transition-colors"
+          className="md:hidden p-2 text-white hover:text-blue-400 transition-colors"
           aria-label={mobileOpen ? 'Close menu' : 'Open menu'}
         >
           {mobileOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
@@ -79,13 +79,13 @@ export function Nav({ variant = 'solid', activePath = '' }: NavProps) {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className={`py-2 text-lg ${isActive(link.href) ? 'text-emerald-400' : 'hover:text-emerald-400 transition-colors'}`}
+                className={`py-2 text-lg ${isActive(link.href) ? 'text-blue-400' : 'hover:text-blue-400 transition-colors'}`}
               >
                 {link.label}
               </Link>
             ))}
             <div className="pt-2" onClick={() => setMobileOpen(false)}>
-              <ComingSoonButton className="w-full justify-center bg-emerald-600 hover:bg-emerald-700 px-6 py-3 rounded-lg font-medium">
+              <ComingSoonButton className="w-full justify-center bg-blue-600 hover:bg-blue-700 px-6 py-3 rounded-lg font-medium">
                 Watch Now
               </ComingSoonButton>
             </div>

@@ -18,14 +18,14 @@ export default function HillCountryTV() {
             {/* Left Side - Hero Text */}
             <div className="space-y-6 lg:pr-8">
               <h1 className="text-5xl md:text-7xl font-bold leading-tight tracking-tight">
-                HCTV
-                <span className="block text-emerald-400">Streaming Now</span>
+                BluebonnetTV
+                <span className="block text-blue-400">Streaming Now</span>
               </h1>
               <p className="text-xl md:text-2xl text-gray-300">
                 Local stories, events, and culture from the heart of Texas Hill Country — live and on-demand
               </p>
               <div className="flex flex-wrap gap-4 pt-4">
-                <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center gap-2">
+                <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center gap-2">
                   <Play className="w-5 h-5" />
                   Watch Live
                 </ComingSoonButton>
@@ -52,21 +52,21 @@ export default function HillCountryTV() {
       </section>
 
       {/* Quick Info Bar */}
-      <section className="bg-gradient-to-r from-emerald-900/40 to-slate-900/40 backdrop-blur-sm border-y border-emerald-500/20">
+      <section className="bg-gradient-to-r from-blue-900/40 to-slate-900/40 backdrop-blur-sm border-y border-blue-500/20">
         <div className="container mx-auto px-6 py-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div className="space-y-2">
-              <Radio className="w-8 h-8 mx-auto text-emerald-400" />
+              <Radio className="w-8 h-8 mx-auto text-blue-400" />
               <h3 className="font-bold text-lg">24/7 Streaming</h3>
               <p className="text-gray-400">Always-on local content</p>
             </div>
             <div className="space-y-2">
-              <Calendar className="w-8 h-8 mx-auto text-emerald-400" />
+              <Calendar className="w-8 h-8 mx-auto text-blue-400" />
               <h3 className="font-bold text-lg">Live Events</h3>
               <p className="text-gray-400">Community happenings as they unfold</p>
             </div>
             <div className="space-y-2">
-              <Tv className="w-8 h-8 mx-auto text-emerald-400" />
+              <Tv className="w-8 h-8 mx-auto text-blue-400" />
               <h3 className="font-bold text-lg">On-Demand Library</h3>
               <p className="text-gray-400">Watch anytime, anywhere</p>
             </div>
@@ -78,7 +78,7 @@ export default function HillCountryTV() {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-12 text-center">
-            What's On <span className="text-emerald-400">HCTV</span>
+            What's On <span className="text-blue-400">BluebonnetTV</span>
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
@@ -135,7 +135,7 @@ export default function HillCountryTV() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">
             Start Watching Today
@@ -143,7 +143,7 @@ export default function HillCountryTV() {
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Free to watch. Available on Apple TV, Roku, iPhone, and web.
           </p>
-          <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
+          <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
             Get Started
           </ComingSoonButton>
         </div>
@@ -155,26 +155,26 @@ export default function HillCountryTV() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Tv className="w-6 h-6 text-emerald-500" />
-                <span className="text-xl font-bold">HCTV</span>
+                <Tv className="w-6 h-6 text-blue-500" />
+                <span className="text-xl font-bold">BluebonnetTV</span>
               </div>
               <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Watch</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-emerald-400 transition-colors">Live Stream</a></li>
-                <li><Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link></li>
-                <li><a href="#" className="hover:text-emerald-400 transition-colors">On Demand</a></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Live Stream</a></li>
+                <li><Link href="/schedule" className="hover:text-blue-400 transition-colors">Schedule</Link></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">On Demand</a></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">About</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
-                <li><Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link></li>
-                <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
-                <li><a href="#" className="hover:text-emerald-400 transition-colors">Advertise</a></li>
+                <li><Link href="/about" className="hover:text-blue-400 transition-colors">Our Story</Link></li>
+                <li><Link href="/get-involved" className="hover:text-blue-400 transition-colors">Get Involved</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+                <li><a href="#" className="hover:text-blue-400 transition-colors">Advertise</a></li>
               </ul>
             </div>
             <div>

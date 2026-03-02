@@ -168,21 +168,21 @@ export default function GetInvolvedPage() {
       <Nav activePath="/get-involved" />
 
       {/* Hero Section */}
-      <section className="relative py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="relative py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6">
-          <Link href="/" className="inline-flex items-center gap-2 text-emerald-400 hover:text-emerald-300 transition-colors mb-8">
+          <Link href="/" className="inline-flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors mb-8">
             <ArrowLeft className="w-5 h-5" />
             Back to Home
           </Link>
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Get Involved with <span className="text-emerald-400">HCTV</span>
+            Get Involved with <span className="text-blue-400">BluebonnetTV</span>
           </h1>
           <p className="text-xl md:text-2xl text-gray-300 max-w-3xl mb-8">
             We&apos;re building the modern local network for Texas Hill Country — and we&apos;re looking for investors, creators, talent, and partners to help shape what&apos;s next.
           </p>
           <div className="flex flex-wrap gap-4 mb-4">
             <a href="#form">
-              <button className="bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105">
+              <button className="bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105">
                 Submit an Application / Pitch
               </button>
             </a>
@@ -202,7 +202,7 @@ export default function GetInvolvedPage() {
       <section className="py-20 bg-black">
         <div className="container mx-auto px-6">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 text-center">
-            Ways to Work <span className="text-emerald-400">With Us</span>
+            Ways to Work <span className="text-blue-400">With Us</span>
           </h2>
           <p className="text-xl text-gray-300 max-w-3xl mx-auto text-center mb-16">
             Whether you&apos;re backing the vision, bringing a show idea, or joining the production team — there&apos;s a place to plug in. Choose the path that fits you.
@@ -213,23 +213,23 @@ export default function GetInvolvedPage() {
               return (
                 <div
                   key={idx}
-                  className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-emerald-500/50 transition-colors"
+                  className="bg-gradient-to-br from-gray-900 to-gray-800 p-6 rounded-xl border border-gray-700 hover:border-blue-500/50 transition-colors"
                 >
-                  <div className="bg-emerald-600/20 p-3 rounded-lg w-fit mb-4">
-                    <Icon className="w-6 h-6 text-emerald-400" />
+                  <div className="bg-blue-600/20 p-3 rounded-lg w-fit mb-4">
+                    <Icon className="w-6 h-6 text-blue-400" />
                   </div>
                   <h3 className="text-xl font-bold mb-3">{card.headline}</h3>
                   <p className="text-gray-400 text-sm mb-4">{card.body}</p>
                   <ul className="space-y-1 text-gray-400 text-sm mb-4">
                     {card.bullets.map((b, i) => (
                       <li key={i} className="flex items-start gap-2">
-                        <span className="text-emerald-400">•</span>
+                        <span className="text-blue-400">•</span>
                         <span>{b}</span>
                       </li>
                     ))}
                   </ul>
                   <a href="#form">
-                    <span className="text-emerald-400 font-medium hover:text-emerald-300 transition-colors text-sm">
+                    <span className="text-blue-400 font-medium hover:text-blue-300 transition-colors text-sm">
                       {card.cta} →
                     </span>
                   </a>
@@ -241,14 +241,14 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* What We're Building */}
-      <section className="py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6">
           <div className="max-w-3xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-bold mb-6">
               A modern local network — built for streaming first
             </h2>
             <p className="text-xl text-gray-300">
-              HCTV blends always-on programming, live community coverage, and an on-demand library. Our goal is to give the Hill Country a dedicated channel that highlights what makes this region special — while creating real opportunities for creators, talent, and local brands.
+              BluebonnetTV blends always-on programming, live community coverage, and an on-demand library. Our goal is to give the Hill Country a dedicated channel that highlights what makes this region special — while creating real opportunities for creators, talent, and local brands.
             </p>
           </div>
         </div>
@@ -264,8 +264,8 @@ export default function GetInvolvedPage() {
             </p>
 
             {submitted ? (
-              <div className="bg-emerald-900/20 border border-emerald-500/30 p-8 rounded-xl text-center">
-                <p className="text-xl text-emerald-400 font-medium">
+              <div className="bg-blue-900/20 border border-blue-500/30 p-8 rounded-xl text-center">
+                <p className="text-xl text-blue-400 font-medium">
                   Thanks — we received it. If it&apos;s a fit, we&apos;ll reach back out soon.
                 </p>
               </div>
@@ -280,7 +280,7 @@ export default function GetInvolvedPage() {
                     required
                     value={formData.name}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                     placeholder="Your name"
                   />
                 </div>
@@ -293,7 +293,7 @@ export default function GetInvolvedPage() {
                     required
                     value={formData.email}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                     placeholder="you@example.com"
                   />
                 </div>
@@ -305,7 +305,7 @@ export default function GetInvolvedPage() {
                     name="phone"
                     value={formData.phone}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                     placeholder="(512) 555-0123"
                   />
                 </div>
@@ -317,7 +317,7 @@ export default function GetInvolvedPage() {
                     required
                     value={formData.category}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                   >
                     <option value="">Select a category</option>
                     {CATEGORIES.map((cat) => (
@@ -333,7 +333,7 @@ export default function GetInvolvedPage() {
                     name="location"
                     value={formData.location}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                     placeholder="City, TX"
                   />
                 </div>
@@ -345,7 +345,7 @@ export default function GetInvolvedPage() {
                     name="links"
                     value={formData.links}
                     onChange={handleChange}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white"
                     placeholder="Portfolio / reel / YouTube / Vimeo / LinkedIn"
                   />
                 </div>
@@ -358,17 +358,17 @@ export default function GetInvolvedPage() {
                     value={formData.message}
                     onChange={handleChange}
                     rows={6}
-                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-emerald-500 transition-colors text-white resize-none"
+                    className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg focus:outline-none focus:border-blue-500 transition-colors text-white resize-none"
                     placeholder="Tell us about yourself and your interest..."
                   />
                 </div>
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className={`w-full bg-emerald-600 hover:bg-emerald-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
+                  className={`w-full bg-blue-600 hover:bg-blue-700 px-8 py-4 rounded-lg font-bold text-lg transition-all hover:scale-105 flex items-center justify-center gap-2 ${isSubmitting ? 'opacity-70 cursor-not-allowed' : ''}`}
                 >
                   <Send className="w-5 h-5" />
-                  {isSubmitting ? 'Sending...' : 'Send to HCTV'}
+                  {isSubmitting ? 'Sending...' : 'Send to BluebonnetTV'}
                 </button>
               </form>
             )}
@@ -377,33 +377,33 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* Direct Email Shortcuts */}
-      <section className="py-16 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="py-16 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6">
           <h2 className="text-3xl font-bold mb-8 text-center">Prefer email?</h2>
           <div className="flex flex-wrap justify-center gap-8 max-w-2xl mx-auto">
             <div className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-emerald-400" />
+              <Mail className="w-5 h-5 text-blue-400" />
               <div>
                 <p className="text-sm text-gray-400">General</p>
-                <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
                   info@hillcountrymediagroup.com
                 </a>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-emerald-400" />
+              <Mail className="w-5 h-5 text-blue-400" />
               <div>
                 <p className="text-sm text-gray-400">Advertising</p>
-                <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
                   info@hillcountrymediagroup.com
                 </a>
               </div>
             </div>
             <div className="flex items-center gap-3">
-              <Mail className="w-5 h-5 text-emerald-400" />
+              <Mail className="w-5 h-5 text-blue-400" />
               <div>
                 <p className="text-sm text-gray-400">News tips</p>
-                <a href="mailto:info@hillcountrymediagroup.com" className="text-emerald-400 hover:text-emerald-300 transition-colors">
+                <a href="mailto:info@hillcountrymediagroup.com" className="text-blue-400 hover:text-blue-300 transition-colors">
                   info@hillcountrymediagroup.com
                 </a>
               </div>
@@ -413,13 +413,13 @@ export default function GetInvolvedPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-br from-emerald-900/20 to-slate-900/20">
+      <section className="py-20 bg-gradient-to-br from-blue-900/20 to-slate-900/20">
         <div className="container mx-auto px-6 text-center">
           <h2 className="text-4xl md:text-5xl font-bold mb-6">Start Watching Today</h2>
           <p className="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">
             Free to watch. Available on Apple TV, Roku, iPhone, and web.
           </p>
-          <ComingSoonButton className="bg-emerald-600 hover:bg-emerald-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
+          <ComingSoonButton className="bg-blue-600 hover:bg-blue-700 px-12 py-5 rounded-lg font-bold text-xl transition-all hover:scale-105">
             Watch Live Now
           </ComingSoonButton>
         </div>
@@ -431,26 +431,26 @@ export default function GetInvolvedPage() {
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
             <div>
               <div className="flex items-center gap-2 mb-4">
-                <Tv className="w-6 h-6 text-emerald-500" />
-                <span className="text-xl font-bold">HCTV</span>
+                <Tv className="w-6 h-6 text-blue-500" />
+                <span className="text-xl font-bold">BluebonnetTV</span>
               </div>
               <p className="text-gray-400">Your local streaming channel for all things Texas Hill Country</p>
             </div>
             <div>
               <h4 className="font-bold mb-4">Watch</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/#live" className="hover:text-emerald-400 transition-colors">Live Stream</Link></li>
-                <li><Link href="/schedule" className="hover:text-emerald-400 transition-colors">Schedule</Link></li>
-                <li><Link href="/#" className="hover:text-emerald-400 transition-colors">On Demand</Link></li>
+                <li><Link href="/#live" className="hover:text-blue-400 transition-colors">Live Stream</Link></li>
+                <li><Link href="/schedule" className="hover:text-blue-400 transition-colors">Schedule</Link></li>
+                <li><Link href="/#" className="hover:text-blue-400 transition-colors">On Demand</Link></li>
               </ul>
             </div>
             <div>
               <h4 className="font-bold mb-4">About</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><Link href="/about" className="hover:text-emerald-400 transition-colors">Our Story</Link></li>
-                <li><Link href="/get-involved" className="hover:text-emerald-400 transition-colors">Get Involved</Link></li>
-                <li><Link href="/contact" className="hover:text-emerald-400 transition-colors">Contact</Link></li>
-                <li><Link href="#" className="hover:text-emerald-400 transition-colors">Advertise</Link></li>
+                <li><Link href="/about" className="hover:text-blue-400 transition-colors">Our Story</Link></li>
+                <li><Link href="/get-involved" className="hover:text-blue-400 transition-colors">Get Involved</Link></li>
+                <li><Link href="/contact" className="hover:text-blue-400 transition-colors">Contact</Link></li>
+                <li><Link href="#" className="hover:text-blue-400 transition-colors">Advertise</Link></li>
               </ul>
             </div>
             <div>
