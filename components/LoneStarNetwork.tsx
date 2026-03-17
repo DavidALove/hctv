@@ -48,7 +48,7 @@ export default function LoneStarNetwork() {
           </div>
 
           <a
-            href="#contact"
+            href="/#contact"
             className="btn-primary inline-flex items-center gap-2 mt-6 bg-blue text-black px-8 py-3.5 text-[0.72rem] font-semibold tracking-[0.14em] uppercase no-underline transition-all duration-200"
           >
             Advertise on LoneStar Network →

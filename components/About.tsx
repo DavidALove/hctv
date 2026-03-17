@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import SectionEyebrow from './SectionEyebrow'
 
 const dbas = [
@@ -5,12 +6,14 @@ const dbas = [
     tag: 'Operating Brand · Advertising Network',
     name: 'LoneStar Network',
     url: 'thelonestarnetwork.com',
+    href: '/lonestar',
     desc: 'Full-service digital advertising network specializing in programmatic display, OTT/CTV streaming, and social media advertising campaigns for regional and statewide brands.',
   },
   {
     tag: 'Operating Brand · Search Marketing',
     name: 'Local-SEO.co',
     url: 'local-seo.co',
+    href: '/local-seo',
     desc: 'Dedicated local search optimization platform helping Texas businesses dominate Google rankings, Google Business Profiles, and local map pack placements in their target markets.',
   },
 ]
@@ -65,9 +68,10 @@ export default function About() {
 
           <div className="border border-border flex flex-col mb-8">
             {dbas.map((dba, i) => (
-              <div
+              <Link
                 key={dba.name}
-                className={`bg-surface px-8 py-7 transition-colors duration-200 hover:bg-[#181D2A] cursor-default
+                href={dba.href}
+                className={`block bg-surface px-8 py-7 transition-colors duration-200 hover:bg-[#181D2A]
                   ${i < dbas.length - 1 ? 'border-b border-border' : ''}`}
               >
                 <div className="text-[0.58rem] font-semibold tracking-[0.2em] uppercase text-blue mb-1.5">
@@ -78,7 +82,7 @@ export default function About() {
                 </div>
                 <div className="text-[0.7rem] text-cream-dim tracking-[0.06em]">{dba.url}</div>
                 <div className="text-[0.88rem] text-cream-dim mt-2.5 leading-[1.65]">{dba.desc}</div>
-              </div>
+              </Link>
             ))}
           </div>
 

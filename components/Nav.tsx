@@ -42,27 +42,27 @@ export default function Nav() {
       {/* Links */}
       <ul className="flex items-center gap-10 list-none">
         {[
-          { label: 'Company',         href: '#about' },
-          { label: 'Services',        href: '#services' },
-          { label: 'LoneStar Network',href: '#lonestar' },
-          { label: 'Local SEO',       href: '#localseo' },
+          { label: 'Company',         href: '/#about' },
+          { label: 'Services',        href: '/services' },
+          { label: 'LoneStar Network',href: '/lonestar' },
+          { label: 'Local SEO',       href: '/local-seo' },
         ].map(({ label, href }) => (
           <li key={href}>
-            <a
+            <Link
               href={href}
               className="text-[0.72rem] font-medium tracking-[0.12em] uppercase text-cream-dim hover:text-blue transition-colors duration-200 no-underline"
             >
               {label}
-            </a>
+            </Link>
           </li>
         ))}
         <li>
-          <a
-            href="#contact"
+          <Link
+            href="/#contact"
             className="nav-cta text-[0.7rem] font-medium tracking-[0.14em] uppercase px-[22px] py-[9px] border border-blue text-blue transition-all duration-200 no-underline"
           >
             Partner With Us
-          </a>
+          </Link>
         </li>
       </ul>
     </nav>

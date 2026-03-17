@@ -42,7 +42,7 @@ export default function Contact() {
             Schedule a Free Strategy Call
           </a>
           <a
-            href="#services"
+            href="/services"
             className="text-cream-dim hover:text-white text-[0.72rem] font-medium tracking-[0.14em] uppercase no-underline transition-colors duration-200"
           >
             View All Services →

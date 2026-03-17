@@ -51,21 +51,21 @@ export default function Hero() {
 
         {/* CTAs */}
         <div className="flex items-center gap-6 animate-fade-up-3">
-          <a
-            href="#services"
+          <Link
+            href="/services"
             className="btn-primary inline-flex items-center gap-2.5 bg-blue text-black px-8 py-3.5 text-[0.72rem] font-semibold tracking-[0.14em] uppercase no-underline transition-all duration-200"
           >
             Explore Our Platform
             <svg width="14" height="14" viewBox="0 0 14 14" fill="none">
               <path d="M2 7h10M7 2l5 5-5 5" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" />
             </svg>
-          </a>
-          <a
-            href="#contact"
+          </Link>
+          <Link
+            href="/#contact"
             className="inline-flex items-center gap-2.5 text-cream-dim hover:text-white text-[0.72rem] font-medium tracking-[0.14em] uppercase no-underline transition-colors duration-200"
           >
             Schedule a Consultation →
-          </a>
+          </Link>
         </div>
       </div>
 

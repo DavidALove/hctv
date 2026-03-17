@@ -1,17 +1,17 @@
 const companyLinks = [
-  { label: 'About Us',        href: '#about' },
-  { label: 'Our Services',    href: '#services' },
-  { label: 'LoneStar Network',href: '#lonestar' },
-  { label: 'Local-SEO.co',    href: '#localseo' },
-  { label: 'Contact',         href: '#contact' },
+  { label: 'About Us',        href: '/#about' },
+  { label: 'Our Services',    href: '/services' },
+  { label: 'LoneStar Network',href: '/lonestar' },
+  { label: 'Local-SEO.co',    href: '/local-seo' },
+  { label: 'Contact',         href: '/#contact' },
 ]
 
 const serviceLinks = [
-  { label: 'Programmatic Display', href: '#services' },
-  { label: 'Local SEO',            href: '#services' },
-  { label: 'Social Media Ads',     href: '#services' },
-  { label: 'OTT & CTV Streaming',  href: '#services' },
-  { label: 'Analytics & Reporting',href: '#services' },
+  { label: 'Programmatic Display', href: '/services' },
+  { label: 'Local SEO',            href: '/local-seo' },
+  { label: 'Social Media Ads',     href: '/services' },
+  { label: 'OTT & CTV Streaming',  href: '/services' },
+  { label: 'Analytics & Reporting',href: '/services' },
 ]
 
 const contactLinks = [

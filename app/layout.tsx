@@ -1,5 +1,7 @@
 import type { Metadata } from 'next'
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
+import Nav from '@/components/Nav'
+import Footer from '@/components/Footer'
 import './globals.css'
 
 const cormorant = Cormorant_Garamond({
@@ -56,7 +58,11 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           :root { --font-bebas: 'Bebas Neue'; }
         `}</style>
       </head>
-      <body className="font-sans font-light leading-relaxed" suppressHydrationWarning>{children}</body>
+      <body className="font-sans font-light leading-relaxed" suppressHydrationWarning>
+        <Nav />
+        <main>{children}</main>
+        <Footer />
+      </body>
     </html>
   )
 }
