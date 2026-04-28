@@ -72,26 +72,26 @@ export default function Advertising() {
   return (
     <section
       id="advertising"
-      className="py-[120px] px-12 border-t border-b border-border"
+      className="py-20 sm:py-[120px] px-5 sm:px-8 lg:px-12 border-t border-b border-border"
       style={{ background: 'var(--deep)' }}
     >
       <div className="max-w-[1400px] mx-auto">
         <SectionEyebrow label="Digital Advertising Capabilities" />
         <h2
-          className="font-cormorant font-light text-white leading-[1.1] mb-12"
-          style={{ fontSize: 'clamp(2.2rem, 4vw, 4rem)' }}
+          className="font-cormorant font-light text-white leading-[1.1] mb-10 sm:mb-12"
+          style={{ fontSize: 'clamp(1.9rem, 4vw, 4rem)' }}
         >
           Every channel. <em className="italic text-blue">Every audience.</em>
         </h2>
 
         <div
-          className="grid grid-cols-3 gap-px border border-border"
+          className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-px border border-border"
           style={{ background: 'var(--border)' }}
         >
           {cards.map((card) => (
             <div
               key={card.title}
-              className="p-10 transition-colors duration-200 hover:bg-surface cursor-default"
+              className="p-7 sm:p-8 lg:p-10 transition-colors duration-200 hover:bg-surface cursor-default"
               style={{ background: 'var(--deep)' }}
             >
               {card.icon}

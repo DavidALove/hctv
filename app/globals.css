@@ -73,7 +73,7 @@ body::before {
   top: 50%;
   transform: translateY(-50%);
   font-family: var(--font-bebas), sans-serif;
-  font-size: 18rem;
+  font-size: clamp(6rem, 18vw, 18rem);
   color: rgba(0,153,221,0.03);
   pointer-events: none;
   white-space: nowrap;
@@ -86,7 +86,7 @@ body::before {
   position: absolute;
   bottom: -2rem;
   right: -2rem;
-  font-size: 18rem;
+  font-size: clamp(8rem, 25vw, 18rem);
   color: rgba(0,153,221,0.04);
   line-height: 1;
   pointer-events: none;

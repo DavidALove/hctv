@@ -22,10 +22,10 @@ export default function About() {
   return (
     <section
       id="about"
-      className="py-[120px] px-12 border-t border-b border-border"
+      className="py-20 sm:py-[120px] px-5 sm:px-8 lg:px-12 border-t border-b border-border"
       style={{ background: 'var(--deep)' }}
     >
-      <div className="max-w-[1400px] mx-auto grid grid-cols-2 gap-24 items-start">
+      <div className="max-w-[1400px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-24 items-start">
 
         {/* Left — copy */}
         <div>
@@ -71,7 +71,7 @@ export default function About() {
               <Link
                 key={dba.name}
                 href={dba.href}
-                className={`block bg-surface px-8 py-7 transition-colors duration-200 hover:bg-[#181D2A]
+                className={`block bg-surface px-5 py-6 sm:px-8 sm:py-7 transition-colors duration-200 hover:bg-[#181D2A]
                   ${i < dbas.length - 1 ? 'border-b border-border' : ''}`}
               >
                 <div className="text-[0.58rem] font-semibold tracking-[0.2em] uppercase text-blue mb-1.5">

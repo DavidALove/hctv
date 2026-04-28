@@ -24,14 +24,14 @@ const reasons = [
 export default function WhyUs() {
   return (
     <section id="why" className="bg-black overflow-hidden">
-      <div className="grid grid-cols-2 min-h-[600px]">
+      <div className="grid grid-cols-1 lg:grid-cols-2 lg:min-h-[600px]">
 
         {/* Left panel */}
         <div
-          className="why-left-panel relative flex flex-col justify-center px-16 py-[100px] overflow-hidden"
+          className="why-left-panel relative flex flex-col justify-center px-5 sm:px-8 lg:px-16 py-16 lg:py-[100px] overflow-hidden lg:border-r"
           style={{
             background: 'linear-gradient(135deg, #020B1E 0%, #071530 100%)',
-            borderRight: '1px solid rgba(0,153,221,0.15)',
+            borderColor: 'rgba(0,153,221,0.15)',
           }}
         >
           <h2
@@ -49,7 +49,7 @@ export default function WhyUs() {
 
         {/* Right panel */}
         <div
-          className="flex flex-col justify-center px-16 py-[100px]"
+          className="flex flex-col justify-center px-5 sm:px-8 lg:px-16 py-16 lg:py-[100px]"
           style={{ background: 'var(--surface)' }}
         >
           <ul className="flex flex-col gap-8 list-none">

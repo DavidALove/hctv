@@ -44,12 +44,11 @@ function FooterCol({ title, links }: { title: string; links: { label: string; hr
 
 export default function Footer() {
   return (
-    <footer className="border-t border-border px-12 pt-16 pb-10" style={{ background: 'var(--deep)' }}>
+    <footer className="border-t border-border px-5 sm:px-8 lg:px-12 pt-12 sm:pt-16 pb-10" style={{ background: 'var(--deep)' }}>
       <div className="max-w-[1400px] mx-auto">
 
         {/* Main grid */}
-        <div className="grid gap-16 pb-12 border-b border-border mb-8"
-          style={{ gridTemplateColumns: '2fr 1fr 1fr 1fr' }}
+        <div className="grid gap-10 sm:gap-12 lg:gap-16 pb-10 sm:pb-12 border-b border-border mb-8 grid-cols-1 sm:grid-cols-2 lg:[grid-template-columns:2fr_1fr_1fr_1fr]"
         >
           {/* Brand col */}
           <div>
@@ -81,14 +80,14 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="flex justify-between items-center">
-          <span className="text-[0.72rem] text-muted">
+        <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center gap-4">
+          <span className="text-[0.7rem] sm:text-[0.72rem] text-muted leading-relaxed">
             © {new Date().getFullYear()} Hill Country Media Group LLC. All rights reserved.
             &nbsp;DBA LoneStar Network · DBA Local-SEO.co
           </span>
           <div className="flex gap-6">
-            <a href="/privacy"  className="text-[0.72rem] text-muted hover:text-cream-dim transition-colors duration-200 no-underline">Privacy Policy</a>
-            <a href="/terms"    className="text-[0.72rem] text-muted hover:text-cream-dim transition-colors duration-200 no-underline">Terms of Service</a>
+            <a href="/privacy"  className="text-[0.7rem] sm:text-[0.72rem] text-muted hover:text-cream-dim transition-colors duration-200 no-underline">Privacy Policy</a>
+            <a href="/terms"    className="text-[0.7rem] sm:text-[0.72rem] text-muted hover:text-cream-dim transition-colors duration-200 no-underline">Terms of Service</a>
           </div>
         </div>
 

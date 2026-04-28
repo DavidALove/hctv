@@ -83,11 +83,11 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="services" className="py-[120px] px-12 bg-black">
+    <section id="services" className="py-20 sm:py-[120px] px-5 sm:px-8 lg:px-12 bg-black">
       <div className="max-w-[1400px] mx-auto">
 
         {/* Header */}
-        <div className="grid grid-cols-2 gap-16 items-end mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-16 items-end mb-12 sm:mb-16">
           <div>
             <SectionEyebrow label="What We Do" />
             <h2
@@ -108,13 +108,13 @@ export default function Services() {
 
         {/* Grid */}
         <div
-          className="grid grid-cols-2 gap-px border border-border"
+          className="grid grid-cols-1 md:grid-cols-2 gap-px border border-border"
           style={{ background: 'var(--border)' }}
         >
           {services.map((svc) => (
             <div
               key={svc.num}
-              className="service-card bg-black hover:bg-deep transition-colors duration-300 p-12 cursor-default"
+              className="service-card bg-black hover:bg-deep transition-colors duration-300 p-7 sm:p-10 lg:p-12 cursor-default"
             >
               <div
                 className="font-bebas text-[4rem] leading-none mb-6 transition-colors duration-300"
@@ -123,7 +123,7 @@ export default function Services() {
                 {svc.num}
               </div>
               {svc.icon}
-              <h3 className="font-cormorant text-[1.7rem] font-semibold text-white leading-[1.2] mb-4">
+              <h3 className="font-cormorant text-[1.45rem] sm:text-[1.7rem] font-semibold text-white leading-[1.2] mb-4">
                 {svc.title}
               </h3>
               <p className="text-[0.88rem] text-cream-dim leading-[1.8] mb-6">{svc.desc}</p>

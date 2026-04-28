@@ -11,11 +11,10 @@ export default function LoneStarNetwork() {
   return (
     <section
       id="lonestar"
-      className="lonestar-section relative py-[120px] px-12 border-t border-b border-border overflow-hidden"
+      className="lonestar-section relative py-20 sm:py-[120px] px-5 sm:px-8 lg:px-12 border-t border-b border-border overflow-hidden"
       style={{ background: 'var(--surface)' }}
     >
-      <div className="max-w-[1400px] mx-auto grid gap-24 items-center"
-        style={{ gridTemplateColumns: '1.1fr 1fr' }}
+      <div className="max-w-[1400px] mx-auto grid gap-12 lg:gap-24 items-center grid-cols-1 lg:[grid-template-columns:1.1fr_1fr]"
       >
 
         {/* Left */}

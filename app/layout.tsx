@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import Script from 'next/script'
 import { Cormorant_Garamond, DM_Sans } from 'next/font/google'
 import Nav from '@/components/Nav'
@@ -24,6 +24,12 @@ const dmSans = DM_Sans({
 // If you have the font file locally, place it in /public/fonts/ and use localFont
 // For now we'll use a Google Fonts CSS import in globals.css as a @layer base workaround
 // by adding it as a link in metadata
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+}
 
 export const metadata: Metadata = {
   title: 'Hill Country Media Group LLC — Texas Digital Media & Advertising',

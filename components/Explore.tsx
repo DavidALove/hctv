@@ -43,22 +43,22 @@ const pages = [
 
 export default function Explore() {
   return (
-    <section id="explore" className="py-[120px] px-12 bg-black">
+    <section id="explore" className="py-20 sm:py-[120px] px-5 sm:px-8 lg:px-12 bg-black">
       <div className="max-w-[1400px] mx-auto">
         <SectionEyebrow label="Explore" />
         <h2
-          className="font-cormorant font-light text-white leading-[1.1] mb-12"
-          style={{ fontSize: 'clamp(2.2rem, 4vw, 4rem)' }}
+          className="font-cormorant font-light text-white leading-[1.1] mb-10 sm:mb-12"
+          style={{ fontSize: 'clamp(1.9rem, 4vw, 4rem)' }}
         >
           Our platform. <em className="italic text-blue">Your advantage.</em>
         </h2>
 
-        <div className="grid grid-cols-3 gap-px border border-border" style={{ background: 'var(--border)' }}>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-px border border-border" style={{ background: 'var(--border)' }}>
           {pages.map((page) => (
             <Link
               key={page.href}
               href={page.href}
-              className="service-card block bg-black hover:bg-deep transition-colors duration-300 p-12 group"
+              className="service-card block bg-black hover:bg-deep transition-colors duration-300 p-7 sm:p-10 lg:p-12 group"
             >
               {page.icon}
               <h3 className="font-cormorant text-[1.5rem] font-semibold text-white leading-[1.2] mb-3 group-hover:text-blue transition-colors">

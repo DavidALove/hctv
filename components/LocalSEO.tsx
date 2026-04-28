@@ -42,9 +42,8 @@ const steps = [
 
 export default function LocalSEO() {
   return (
-    <section id="localseo" className="py-[120px] px-12 bg-black">
-      <div className="max-w-[1400px] mx-auto grid gap-24 items-start"
-        style={{ gridTemplateColumns: '1fr 1.2fr' }}
+    <section id="localseo" className="py-20 sm:py-[120px] px-5 sm:px-8 lg:px-12 bg-black">
+      <div className="max-w-[1400px] mx-auto grid gap-12 lg:gap-24 items-start grid-cols-1 lg:[grid-template-columns:1fr_1.2fr]"
       >
 
         {/* Left */}
@@ -100,7 +99,7 @@ export default function LocalSEO() {
             {steps.map((step, i) => (
               <div
                 key={step.num}
-                className={`flex items-start gap-6 px-8 py-7
+                className={`flex items-start gap-4 sm:gap-6 px-5 sm:px-8 py-6 sm:py-7
                   ${i < steps.length - 1 ? 'border-b border-border' : ''}`}
               >
                 <div className="font-bebas text-[1.5rem] text-blue flex-shrink-0 w-7">{step.num}</div>

@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 export default function PageCta() {
   return (
-    <section className="py-20 px-12 border-t border-border" style={{ background: 'var(--deep)' }}>
+    <section className="py-16 sm:py-20 px-5 sm:px-8 lg:px-12 border-t border-border" style={{ background: 'var(--deep)' }}>
       <div className="max-w-[1400px] mx-auto text-center">
         <p className="text-[1rem] text-cream-dim mb-6">
           Ready to dominate your Texas market?
