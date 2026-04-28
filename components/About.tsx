@@ -42,6 +42,9 @@ export default function About() {
               <strong className="text-cream font-medium">Hill Country Media Group LLC</strong> is a
               Texas-based digital media holding company operating a portfolio of specialized
               advertising and marketing brands serving businesses across the Lone Star State and beyond.
+              We are proud to be part of the{' '}
+              <strong className="text-cream font-medium">Microgravity Networks</strong> family —
+              alongside sister streaming networks Alive The Network, StingrTV, and Hero Kids Network.
             </p>
             <p className="text-[1rem] text-cream-dim leading-[1.85]">
               We built this company on a simple belief: local businesses deserve enterprise-grade
@@ -52,10 +55,26 @@ export default function About() {
             </p>
             <p className="text-[1rem] text-cream-dim leading-[1.85]">
               Through our two operating brands —{' '}
-              <strong className="text-cream font-medium">LoneStar Network</strong> and{' '}
-              <strong className="text-cream font-medium">Local-SEO.co</strong> — we serve businesses
-              at every stage of their growth, from hyper-local search visibility to full-funnel
-              digital advertising across display, social, and streaming channels.
+              <a
+                href="https://www.thelonestarnetwork.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream font-medium underline decoration-blue/40 underline-offset-4 hover:text-blue hover:decoration-blue transition-colors"
+              >
+                LoneStar Network
+              </a>{' '}
+              and{' '}
+              <a
+                href="https://www.local-seo.co"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-cream font-medium underline decoration-blue/40 underline-offset-4 hover:text-blue hover:decoration-blue transition-colors"
+              >
+                Local-SEO.co
+              </a>{' '}
+              — we serve businesses at every stage of their growth, from hyper-local search
+              visibility to full-funnel digital advertising across display, social, and streaming
+              channels.
             </p>
           </div>
         </div>

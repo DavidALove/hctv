@@ -2,6 +2,7 @@ import Hero from '@/components/Hero'
 import Ticker from '@/components/Ticker'
 import About from '@/components/About'
 import Explore from '@/components/Explore'
+import Network from '@/components/Network'
 import WhyUs from '@/components/WhyUs'
 import Contact from '@/components/Contact'
 
@@ -12,6 +13,7 @@ export default function Home() {
       <Ticker />
       <About />
       <Explore />
+      <Network />
       <WhyUs />
       <Contact />
     </>
